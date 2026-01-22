@@ -1,8 +1,8 @@
 'use client'
-import { motion } from 'framer-motion'
-import { Building2, Users2, ShieldAlert, Target, CheckCircle2, XCircle } from 'lucide-react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Footer } from '@/components/landing/footer'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { motion } from 'framer-motion'
+import { Building2, CheckCircle2, ShieldAlert, Target, Users2, XCircle } from 'lucide-react'
 
 const partyNature = {
   title: 'Bản chất của Đảng và hiện tượng thoái hóa',
@@ -115,7 +115,7 @@ export default function PartyBuildingPage() {
           <div className='absolute top-1/4 left-1/6 w-96 h-96 bg-red-900/20 rounded-full blur-3xl' />
           <div className='absolute bottom-1/4 right-1/6 w-96 h-96 bg-yellow-900/20 rounded-full blur-3xl' />
         </div>
-        
+
         <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -142,9 +142,7 @@ export default function PartyBuildingPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className='mb-16'
           >
-            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>
-              {partyNature.title}
-            </h2>
+            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>{partyNature.title}</h2>
             <div className='grid md:grid-cols-2 gap-8'>
               {partyNature.essence.map((item, index) => {
                 const Icon = item.icon
@@ -157,7 +155,9 @@ export default function PartyBuildingPage() {
                   >
                     <Card className='h-full border-yellow-600/30 bg-gradient-to-br from-black/80 to-red-950/50 backdrop-blur-sm'>
                       <CardHeader>
-                        <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${item.color} mb-4`}>
+                        <div
+                          className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${item.color} mb-4`}
+                        >
                           <Icon className='h-8 w-8 text-white' />
                         </div>
                         <CardTitle className='text-2xl text-yellow-100'>{item.title}</CardTitle>
@@ -229,7 +229,10 @@ export default function PartyBuildingPage() {
             {prohibitions.map((section, index) => {
               const Icon = section.icon
               return (
-                <Card key={index} className='border-orange-600/30 bg-gradient-to-br from-black/80 to-orange-950/50 backdrop-blur-sm'>
+                <Card
+                  key={index}
+                  className='border-orange-600/30 bg-gradient-to-br from-black/80 to-orange-950/50 backdrop-blur-sm'
+                >
                   <CardHeader>
                     <CardTitle className='text-3xl text-yellow-100 flex items-center gap-3'>
                       <Icon className='h-8 w-8 text-red-500' />
@@ -263,9 +266,7 @@ export default function PartyBuildingPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.4 }}
           >
-            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>
-              Biện pháp Xây dựng và Chỉnh đốn
-            </h2>
+            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>Biện pháp Xây dựng và Chỉnh đốn</h2>
             <div className='grid md:grid-cols-4 gap-6'>
               {buildingMeasures.map((measure, index) => {
                 const Icon = measure.icon
@@ -278,7 +279,9 @@ export default function PartyBuildingPage() {
                     whileHover={{ scale: 1.05, y: -5 }}
                     className='p-6 rounded-xl border border-yellow-600/30 bg-gradient-to-br from-black/80 to-red-950/50 backdrop-blur-sm text-center'
                   >
-                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${measure.color} mb-4`}>
+                    <div
+                      className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${measure.color} mb-4`}
+                    >
                       <Icon className='h-8 w-8 text-white' />
                     </div>
                     <h3 className='text-xl font-bold text-yellow-100 mb-3'>{measure.title}</h3>

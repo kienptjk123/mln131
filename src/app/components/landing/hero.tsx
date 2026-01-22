@@ -347,8 +347,7 @@ export function Hero() {
                 className='p-8 rounded-2xl border border-yellow-600/40 bg-gradient-to-br from-black/80 to-red-950/60 backdrop-blur-sm'
               >
                 <h3 className='text-2xl font-bold text-yellow-100 mb-6 flex items-center gap-2'>
-                  <Clock className='h-6 w-6' />
-                  8 Đại án nổi bật
+                  <Clock className='h-6 w-6' />8 Đại án nổi bật
                 </h3>
                 <div className='space-y-4'>
                   {[
