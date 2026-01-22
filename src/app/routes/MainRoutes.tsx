@@ -9,6 +9,7 @@ import FlipbookPage from '@/pages/FlipbookPage'
 import { Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { ThemeProvider } from '@/contexts/ThemeContext'
+import FlashcardPage from '@/pages/FlashcardPage'
 
 export default function MainRoutes() {
   return (
@@ -34,6 +35,7 @@ export default function MainRoutes() {
         <Route path='/xay-dung-dang' element={<PartyBuildingPage />}></Route>
         <Route path='/goc-nhin' element={<PerspectivesPage />}></Route>
         <Route path='/thuyet-trinh' element={<FlipbookPage />}></Route>
+        <Route path='/flashcard' element={<FlashcardPage />}></Route>
       </Routes>
     </ThemeProvider>
   )

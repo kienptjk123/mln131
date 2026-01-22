@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { BarChart3, BookOpen, BookOpenCheck, Building2, Eye, Home } from 'lucide-react'
+import { BarChart3, BookOpen, BookOpenCheck, Building2, Eye, Home, WalletCards } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 
 export function Navbar() {
@@ -12,6 +12,7 @@ export function Navbar() {
     { path: '/thuc-tien', label: 'Thực tiễn & Số liệu', icon: BarChart3 },
     { path: '/xay-dung-dang', label: 'Xây dựng Đảng', icon: Building2 },
     { path: '/goc-nhin', label: 'Góc nhìn Đa chiều', icon: Eye },
+    { path: '/flashcard', label: 'Flashcard', icon: WalletCards },
     { path: '/thuyet-trinh', label: 'Thuyết Trình', icon: BookOpenCheck }
   ]
 
