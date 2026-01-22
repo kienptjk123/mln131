@@ -1,3 +1,4 @@
+import { memo } from "react";
 import type { GameCard } from "@/data/cards";
 import { cn } from "@/lib/utils";
 import { Coins, Sparkles } from "lucide-react";
@@ -8,7 +9,7 @@ interface CardProps {
   isLocked: boolean;
 }
 
-export function Card({ card, onClick, isLocked }: CardProps) {
+export const Card = memo(function Card({ card, onClick, isLocked }: CardProps) {
   const handleClick = () => {
     if (!isLocked && !card.isFlipped && !card.isMatched) {
       onClick();
@@ -24,19 +25,20 @@ export function Card({ card, onClick, isLocked }: CardProps) {
       className={cn(
         "relative w-full aspect-[3/4] perspective-1000 group",
         "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-        "transition-all duration-300 ease-out",
+        "transition-transform duration-200 ease-out",
         card.isMatched && "opacity-50 cursor-not-allowed scale-95",
-        !card.isFlipped && !card.isMatched && !isLocked && "hover:scale-105 hover:shadow-2xl active:scale-100"
+        !card.isFlipped && !card.isMatched && !isLocked && "hover:scale-102 active:scale-100"
       )}
     >
       <div
         className={cn(
-          "relative w-full h-full transition-transform duration-700 preserve-3d",
+          "relative w-full h-full transition-transform duration-500 preserve-3d",
           card.isFlipped && "rotate-y-180"
         )}
         style={{
           transformStyle: "preserve-3d",
           transform: card.isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+          willChange: card.isFlipped ? "transform" : "auto",
         }}
       >
         {/* Card Back - Enhanced for black background */}
@@ -52,8 +54,8 @@ export function Card({ card, onClick, isLocked }: CardProps) {
           style={{ backfaceVisibility: "hidden" }}
         >
           <div className="relative">
-            <Coins className="w-14 h-14 text-white drop-shadow-lg animate-pulse" />
-            <Sparkles className="absolute -top-1 -right-1 w-6 h-6 text-yellow-300 animate-spin" />
+            <Coins className="w-14 h-14 text-white drop-shadow-lg" />
+            <Sparkles className="absolute -top-1 -right-1 w-6 h-6 text-yellow-300" />
           </div>
           
           <div className="text-white font-bold text-sm text-center leading-relaxed drop-shadow-md">
@@ -64,9 +66,6 @@ export function Card({ card, onClick, isLocked }: CardProps) {
           {/* Enhanced glow effects */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/20 via-white/5 to-transparent pointer-events-none" />
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
-          
-          {/* Animated border glow */}
-          <div className="absolute inset-0 rounded-3xl border border-white/30 pointer-events-none animate-pulse" />
         </div>
 
         {/* Card Front - Enhanced for black background */}
@@ -114,7 +113,7 @@ export function Card({ card, onClick, isLocked }: CardProps) {
         {/* Matched state overlay */}
         {card.isMatched && (
           <div className="absolute inset-0 rounded-3xl bg-green-500/30 border-2 border-green-400 flex items-center justify-center backdrop-blur-sm z-10">
-            <div className="bg-green-500 text-white rounded-full p-3 shadow-lg animate-bounce">
+            <div className="bg-green-500 text-white rounded-full p-3 shadow-lg">
               <Sparkles className="w-6 h-6" />
             </div>
           </div>
@@ -122,4 +121,4 @@ export function Card({ card, onClick, isLocked }: CardProps) {
       </div>
     </button>
   );
-}
+});

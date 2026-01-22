@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { formatTime } from "@/lib/storage";
 import { Trophy, Timer, MousePointerClick, Target } from "lucide-react";
 
@@ -8,10 +9,10 @@ interface StatsBarProps {
   bestTime: number | null;
 }
 
-export function StatsBar({ moves, time, bestMoves, bestTime }: StatsBarProps) {
+export const StatsBar = memo(function StatsBar({ moves, time, bestMoves, bestTime }: StatsBarProps) {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-all duration-300 hover:shadow-2xl hover:scale-105">
+      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-transform duration-200 hover:scale-102">
         <div className="flex items-center gap-3 mb-2">
           <div className="p-2 bg-blue-900/50 rounded-lg">
             <MousePointerClick className="w-5 h-5 text-blue-400" />
@@ -22,7 +23,7 @@ export function StatsBar({ moves, time, bestMoves, bestTime }: StatsBarProps) {
         <div className="mt-1 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full" />
       </div>
 
-      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-all duration-300 hover:shadow-2xl hover:scale-105">
+      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-transform duration-200 hover:scale-102">
         <div className="flex items-center gap-3 mb-2">
           <div className="p-2 bg-green-900/50 rounded-lg">
             <Timer className="w-5 h-5 text-green-400" />
@@ -33,7 +34,7 @@ export function StatsBar({ moves, time, bestMoves, bestTime }: StatsBarProps) {
         <div className="mt-1 h-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full" />
       </div>
 
-      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-all duration-300 hover:shadow-2xl hover:scale-105">
+      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-transform duration-200 hover:scale-102">
         <div className="flex items-center gap-3 mb-2">
           <div className="p-2 bg-purple-900/50 rounded-lg">
             <Target className="w-5 h-5 text-purple-400" />
@@ -46,7 +47,7 @@ export function StatsBar({ moves, time, bestMoves, bestTime }: StatsBarProps) {
         <div className="mt-1 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full" />
       </div>
 
-      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-all duration-300 hover:shadow-2xl hover:scale-105">
+      <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border-2 border-gray-600/50 transition-transform duration-200 hover:scale-102">
         <div className="flex items-center gap-3 mb-2">
           <div className="p-2 bg-yellow-900/50 rounded-lg">
             <Trophy className="w-5 h-5 text-yellow-400" />
@@ -60,4 +61,4 @@ export function StatsBar({ moves, time, bestMoves, bestTime }: StatsBarProps) {
       </div>
     </div>
   );
-}
+});

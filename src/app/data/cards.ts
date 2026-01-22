@@ -6,789 +6,728 @@ export interface CardPair {
 }
 
 export const cardPairs: CardPair[] = [
-  // CÁC CẶP BÀI GỐC CỦA BẠN (Original 6 pairs)
   {
-    pairId: 'pair-1',
-    concept: 'Lao động cụ thể',
-    definition: 'Tạo ra Giá trị sử dụng của hàng hóa (công dụng)',
-    note: 'Lao động cụ thể tạo ra giá trị sử dụng của sản phẩm.'
+    "pairId": "pair-1",
+    "concept": "Khái niệm tham nhũng theo Luật năm 2018",
+    "definition": "Là hành vi của người có chức vụ, quyền hạn đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi.",
+    "note": "Đây là khái niệm cơ bản để công dân nhận diện hành vi vi phạm [1]."
   },
   {
-    pairId: 'pair-2',
-    concept: 'Lao động trừu tượng',
-    definition: 'Tạo ra Giá trị hàng hóa (hao phí lao động)',
-    note: 'Lao động trừu tượng tạo ra giá trị hàng hóa.'
+    "pairId": "pair-2",
+    "concept": "Bản chất của tham nhũng theo Hồ Chí Minh",
+    "definition": "Là hành vi 'ăn cắp của công làm của tư'.",
+    "note": "Cách giải thích nôm na, dễ hiểu cho mọi tầng lớp nhân dân [1]."
   },
   {
-    pairId: 'pair-3',
-    concept: 'Thước đo giá trị',
-    definition: 'Chức năng của tiền dùng để biểu hiện giá trị của hàng hóa',
-    note: 'Tiền dùng để đo lường và biểu hiện giá trị của các hàng hóa khác.'
+    "pairId": "pair-3",
+    "concept": "Chủ thể của hành vi tham nhũng",
+    "definition": "Phải là người có chức vụ, quyền hạn trong các cơ quan, tổ chức.",
+    "note": "Công dân cần hiểu rõ đối tượng này để thực hiện quyền giám sát [2]."
   },
   {
-    pairId: 'pair-4',
-    concept: 'Phương tiện lưu thông',
-    definition: 'Chức năng của tiền dùng làm trung gian trao đổi (H - T - H)',
-    note: 'Tiền dùng làm môi giới cho quá trình trao đổi hàng hóa.'
+    "pairId": "pair-4",
+    "concept": "Trách nhiệm đầu tiên của công dân",
+    "definition": "Chấp hành nghiêm chỉnh pháp luật về phòng, chống tham nhũng.",
+    "note": "Đây là nghĩa vụ tiên quyết của mỗi cá nhân trong xã hội [3, 4]."
   },
   {
-    pairId: 'pair-5',
-    concept: 'Quy luật Giá trị',
-    definition: 'Điều tiết trao đổi dựa trên hao phí lao động xã hội cần thiết',
-    note: 'Sản xuất & trao đổi dựa trên hao phí lao động xã hội cần thiết.'
+    "pairId": "pair-5",
+    "concept": "Trách nhiệm lên án tham nhũng",
+    "definition": "Công dân cần có thái độ phê phán, lên án mạnh mẽ các hành vi tham nhũng phát hiện được.",
+    "note": "Tạo dư luận xã hội tích cực để răn đe hành vi sai phạm [3, 5]."
   },
   {
-    pairId: 'pair-6',
-    concept: 'Tư bản bất biến (c)',
-    definition: 'Bộ phận tư bản tồn tại dưới hình thái tư liệu sản xuất',
-    note: 'Tồn tại dưới hình thái tư liệu sản xuất.'
+    "pairId": "pair-6",
+    "concept": "Quyền phát hiện và tố cáo",
+    "definition": "Công dân có quyền và trách nhiệm phát hiện, tố cáo hành vi có dấu hiệu tham nhũng.",
+    "note": "Công cụ quan trọng để nhân dân tham gia trực tiếp vào công tác này [4, 6]."
   },
-
-  // CÁC CẶP BÀI MỚI TRÍCH XUẤT TỪ NGUỒN (New extracted pairs)
-
-  // Chương 1: Đối tượng, Phương pháp nghiên cứu và Chức năng của Kinh tế Chính trị Mác – Lênin
   {
-    pairId: 'pair-7',
-    concept: 'Kinh tế Chính trị Mác – Lênin',
-    definition: 'Hệ thống lý luận khoa học về quan hệ sản xuất và trao đổi gắn với lực lượng sản xuất',
-    note: 'Nghiên cứu quan hệ sản xuất và trao đổi trong phương thức sản xuất xã hội [1, 2].'
+    "pairId": "pair-7",
+    "concept": "Nghĩa vụ hợp tác với cơ quan chức năng",
+    "definition": "Công dân có nghĩa vụ giúp đỡ cơ quan có thẩm quyền trong việc xác minh, xử lý tham nhũng.",
+    "note": "Đảm bảo quá trình điều tra được diễn ra thuận lợi và chính xác [4, 7]."
   },
   {
-    pairId: 'pair-8',
-    concept: 'Đối tượng nghiên cứu (Kinh tế Chính trị)',
-    definition: 'Các quan hệ sản xuất và trao đổi trong một phương thức sản xuất nhất định',
-    note: 'Nghiên cứu quy luật chi phối sự vận động của sản xuất tư bản chủ nghĩa [1-4].'
+    "pairId": "pair-8",
+    "concept": "Trách nhiệm về tính xác thực của tố cáo",
+    "definition": "Công dân phải chịu trách nhiệm về tính khách quan, trung thực của thông tin phản ánh.",
+    "note": "Tránh việc lợi dụng dân chủ để vu khống, gây mất đoàn kết [8]."
   },
   {
-    pairId: 'pair-9',
-    concept: 'Quy luật kinh tế',
-    definition: 'Mối liên hệ bản chất, khách quan, lặp đi lặp lại của các hiện tượng trong nền sản xuất xã hội',
-    note: 'Sự tác động của quy luật kinh tế độc lập với ý chí con người [5, 6].'
+    "pairId": "pair-9",
+    "concept": "Quyền kiến nghị hoàn thiện chính sách",
+    "definition": "Công dân có quyền kiến nghị cơ quan nhà nước sửa đổi các 'lỗ hổng' pháp luật gây sơ hở cho tham nhũng.",
+    "note": "Góp phần vào việc phòng ngừa tham nhũng từ sớm, từ xa [4, 9]."
   },
   {
-    pairId: 'pair-10',
-    concept: 'Chính sách kinh tế',
-    definition: 'Sản phẩm chủ quan của con người được hình thành trên cơ sở vận dụng các quy luật kinh tế',
-    note: 'Phù hợp với quy luật khách quan thì phát huy tác dụng [5, 6].'
+    "pairId": "pair-10",
+    "concept": "Tham gia xây dựng pháp luật",
+    "definition": "Góp ý kiến vào các dự thảo văn bản pháp luật về phòng, chống tham nhũng.",
+    "note": "Thể hiện quyền làm chủ của nhân dân trong quản lý nhà nước [4, 10]."
   },
   {
-    pairId: 'pair-11',
-    concept: 'Phương pháp trừu tượng hóa khoa học',
-    definition: 'Phương pháp gạt bỏ yếu tố ngẫu nhiên, hiện tượng tạm thời để tìm ra bản chất đối tượng nghiên cứu',
-    note: 'Giúp nghiên cứu bản chất sâu sắc của các phạm trù kinh tế [7, 8].'
+    "pairId": "pair-11",
+    "concept": "Vai trò của nhân dân trong PCTN",
+    "definition": "Là sức mạnh và động lực to lớn, là 'ngọn đèn pha' soi sáng mọi ngóc ngách của tham nhũng.",
+    "note": "Khẳng định tư tưởng 'Dân là gốc' trong cuộc chiến này [11, 12]."
   },
   {
-    pairId: 'pair-12',
-    concept: 'Chức năng nhận thức',
-    definition:
-      'Cung cấp hệ thống tri thức, lý luận về sự vận động của các quan hệ giữa người với người trong sản xuất và trao đổi',
-    note: 'Là chức năng cơ bản của Kinh tế Chính trị Mác – Lênin [7-10].'
+    "pairId": "pair-12",
+    "concept": "Mối quan hệ giữa dân chủ và PCTN",
+    "definition": "Phát huy dân chủ là để nhân dân hiểu rõ, hăng hái tham gia chống 'giặc nội xâm'.",
+    "note": "Dân chủ thực sự giúp ngăn chặn sự tha hóa của quyền lực [11, 13]."
   },
   {
-    pairId: 'pair-13',
-    concept: 'Chức năng tư tưởng',
-    definition: 'Xây dựng nền tảng tư tưởng cho người lao động, chống lại sự bóc lột, bất công',
-    note: 'Góp phần xây dựng lý tưởng khoa học về xã hội tốt đẹp [11, 12].'
+    "pairId": "pair-13",
+    "concept": "Trách nhiệm giám sát việc sử dụng quyền lực",
+    "definition": "Công dân giám sát cán bộ, đảng viên trong việc tu dưỡng đạo đức và thực thi công vụ.",
+    "note": "Nhân dân kiểm soát để quyền lực không bị lạm dụng vì mục đích cá nhân [14, 15]."
   },
-
-  // Chương 2: Hàng hóa, Thị trường và Vai trò của các Chủ thể tham gia thị trường
   {
-    pairId: 'pair-14',
-    concept: 'Sản xuất hàng hóa',
-    definition: 'Kiểu tổ chức kinh tế mà ở đó người sản xuất tạo ra sản phẩm để trao đổi, mua bán',
-    note: 'Xuất hiện khi có phân công lao động xã hội và tách biệt kinh tế dựa trên sở hữu [13, 14].'
+    "pairId": "pair-14",
+    "concept": "Sự tự giác của mỗi công dân",
+    "definition": "Mỗi người cần tự điều chỉnh hành vi, không tham gia hoặc tiếp tay cho tham nhũng.",
+    "note": "Xây dựng văn hóa liêm chính từ mỗi tế bào của xã hội [16, 17]."
   },
   {
-    pairId: 'pair-15',
-    concept: 'Hàng hóa',
-    definition: 'Sản phẩm của lao động, có thể thỏa mãn nhu cầu của con người thông qua trao đổi, mua bán',
-    note: 'Có hai thuộc tính: giá trị sử dụng và giá trị [15-17].'
+    "pairId": "pair-15",
+    "concept": "Quyền tiếp cận thông tin",
+    "definition": "Công dân có quyền yêu cầu cung cấp thông tin về hoạt động của cơ quan nhà nước để giám sát.",
+    "note": "Công khai, minh bạch là điều kiện để dân thực hiện quyền giám sát [18]."
   },
   {
-    pairId: 'pair-16',
-    concept: 'Giá trị sử dụng của hàng hóa',
-    definition: 'Công dụng của hàng hóa, thỏa mãn nhu cầu nào đó của con người',
-    note: 'Là giá trị sử dụng được xã hội chấp nhận [15, 16].'
+    "pairId": "pair-16",
+    "concept": "Trách nhiệm của công dân là cán bộ",
+    "definition": "Phải gương mẫu trước nhân dân, không được tham nhũng, lãng phí và tiêu cực.",
+    "note": "Cán bộ vừa là công dân vừa có trách nhiệm nêu gương cao hơn [19, 20]."
   },
   {
-    pairId: 'pair-17',
-    concept: 'Giá trị hàng hóa',
-    definition: 'Hao phí lao động xã hội của người sản xuất kết tinh trong hàng hóa',
-    note: 'Giá trị là nội dung, giá trị trao đổi là hình thức biểu hiện của nó [18, 19].'
+    "pairId": "pair-17",
+    "concept": "Vai trò của Mặt trận Tổ quốc",
+    "definition": "Là nơi đại diện cho nhân dân để giám sát, phản biện xã hội về PCTN.",
+    "note": "Cơ chế để nhân dân thực hiện quyền lực dân chủ tập thể [21, 22]."
   },
   {
-    pairId: 'pair-18',
-    concept: 'Thời gian lao động xã hội cần thiết',
-    definition: 'Thời gian lao động trung bình để sản xuất ra một giá trị sử dụng trong điều kiện xã hội bình thường',
-    note: 'Là cơ sở để đo lường lượng giá trị hàng hóa [20, 21].'
+    "pairId": "pair-18",
+    "concept": "Mục tiêu 'Bốn không'",
+    "definition": "Không thể, không dám, không muốn, không cần tham nhũng.",
+    "note": "Cần sự chung tay của cả hệ thống chính trị và nhân dân để đạt được [23, 24]."
   },
   {
-    pairId: 'pair-19',
-    concept: 'Năng suất lao động',
-    definition: 'Năng lực sản xuất của người lao động, đo bằng số lượng sản phẩm tạo ra trong một đơn vị thời gian',
-    note: 'Tăng năng suất lao động làm giảm lượng giá trị của một đơn vị hàng hóa [22, 23].'
+    "pairId": "pair-19",
+    "concept": "Tham nhũng là 'giặc nội xâm'",
+    "definition": "Gây thiệt hại kinh tế, suy thoái đạo đức, làm yếu bộ máy và mất lòng tin của dân.",
+    "note": "Công dân cần nhận thức tính nguy hại này để quyết tâm đấu tranh [25, 26]."
   },
   {
-    pairId: 'pair-20',
-    concept: 'Cường độ lao động',
-    definition: 'Mức độ khẩn trương, tích cực của hoạt động lao động sản xuất',
-    note: 'Tăng cường độ lao động làm tăng số lượng sản phẩm, nhưng không làm thay đổi lượng giá trị một đơn vị hàng hóa [22, 23].'
+    "pairId": "pair-20",
+    "concept": "Nguyên tắc 'Dân biết, dân bàn, dân làm, dân kiểm tra'",
+    "definition": "Là phương châm hành động để công dân thực hiện quyền làm chủ trong PCTN.",
+    "note": "Cơ sở pháp lý và chính trị để huy động sức dân [27-29]."
   },
   {
-    pairId: 'pair-21',
-    concept: 'Lao động giản đơn',
-    definition: 'Lao động không đòi hỏi có quá trình đào tạo một cách hệ thống, chuyên sâu về chuyên môn, kỹ năng',
-    note: 'Mọi lao động phức tạp đều quy về lao động giản đơn [24, 25].'
+    "pairId": "pair-21",
+    "concept": "Trách nhiệm phát hiện nhũng nhiễu",
+    "definition": "Công dân tố cáo các hành vi gợi ý, lót tay, gây phiền hà trong giải quyết công việc.",
+    "note": "Góp phần xóa bỏ tệ 'tham nhũng vặt' nhức nhối [30, 31]."
   },
   {
-    pairId: 'pair-22',
-    concept: 'Lao động phức tạp',
-    definition: 'Lao động đòi hỏi qua quá trình đào tạo về kỹ năng, nghiệp vụ theo yêu cầu của ngành nghề',
-    note: 'Tạo ra nhiều giá trị hơn lao động giản đơn trong cùng một đơn vị thời gian [24, 25].'
+    "pairId": "pair-22",
+    "concept": "Hậu quả của việc thiếu kiên quyết",
+    "definition": "Là cơ hội cho tham nhũng phát triển, đe dọa sự tồn vong của chế độ.",
+    "note": "Công dân không được bàng quan, thờ ơ trước sai phạm [32, 33]."
   },
   {
-    pairId: 'pair-23',
-    concept: 'Hình thái giá trị giản đơn (ngẫu nhiên)',
-    definition: 'Giá trị hàng hóa A được biểu hiện ở hàng hóa B qua trao đổi trực tiếp',
-    note: 'Là hình thái giá trị đầu tiên trong lịch sử [26, 27].'
+    "pairId": "pair-23",
+    "concept": "Xây dựng văn hóa liêm chính",
+    "definition": "Hình thành thói quen không tham nhũng, trọng liêm sỉ và danh dự.",
+    "note": "Giáo dục ý thức cho thế hệ trẻ từ gia đình và nhà trường [17, 34]."
   },
   {
-    pairId: 'pair-24',
-    concept: 'Hình thái vật ngang giá chung',
-    definition: 'Giá trị của các hàng hóa được biểu hiện ở cùng một loại hàng hóa đóng vai trò vật ngang giá',
-    note: 'Khắc phục hạn chế của hình thái giá trị mở rộng [26, 27].'
+    "pairId": "pair-24",
+    "concept": "Trách nhiệm bảo vệ người tố cáo",
+    "definition": "Nhà nước bảo vệ, nhưng công dân cũng cần đoàn kết ủng hộ người dũng cảm chống tham nhũng.",
+    "note": "Tạo môi trường an toàn cho cuộc đấu tranh [35-37]."
   },
   {
-    pairId: 'pair-25',
-    concept: 'Hình thái tiền tệ',
-    definition: 'Vàng trở thành vật ngang giá chung cho thế giới hàng hóa',
-    note: 'Tiền tệ là hình thái biểu hiện giá trị của hàng hóa [28, 29].'
+    "pairId": "pair-25",
+    "concept": "Ý thức pháp luật của công dân",
+    "definition": "Hiểu đúng bản chất, tác hại của tham nhũng để phản ánh đúng người, đúng việc.",
+    "note": "Nâng cao dân trí và văn hóa pháp luật cho toàn xã hội [7, 38]."
   },
   {
-    pairId: 'pair-26',
-    concept: 'Giá cả hàng hóa',
-    definition: 'Hình thức biểu hiện bằng tiền của giá trị hàng hóa',
-    note: 'Giá cả có thể lên xuống do tác động của cung - cầu [30, 31].'
+    "pairId": "pair-26",
+    "concept": "Tham gia vào các tổ chức xã hội",
+    "definition": "Thông qua các đoàn thể để đấu tranh ngăn chặn tham nhũng, lãng phí.",
+    "note": "Sức mạnh tập thể luôn hiệu quả hơn cá nhân đơn lẻ [21, 39]."
   },
   {
-    pairId: 'pair-27',
-    concept: 'Phương tiện cất trữ',
-    definition: 'Chức năng của tiền dùng để dự trữ cho lưu thông',
-    note: 'Yêu cầu tiền phải đủ giá trị như vàng, bạc, tiền bạc [30, 31].'
+    "pairId": "pair-27",
+    "concept": "Trách nhiệm của công dân nơi cư trú",
+    "definition": "Phát hiện cán bộ có lối sống xa hoa bất thường so với thu nhập chính đáng.",
+    "note": "Dân giám sát lối sống cán bộ ngay tại cộng đồng [40, 41]."
   },
   {
-    pairId: 'pair-28',
-    concept: 'Phương tiện thanh toán',
-    definition: 'Chức năng của tiền dùng để trả nợ, nộp thuế, thanh toán các khoản mua bán chịu',
-    note: 'Phát triển mạnh trong giao dịch tín dụng, thương mại hiện đại [32, 33].'
+    "pairId": "pair-28",
+    "concept": "Hợp tác quốc tế trong PCTN",
+    "definition": "Công dân ủng hộ các cam kết quốc tế của Việt Nam về chống tham nhũng.",
+    "note": "Việt Nam thực hiện Công ước Liên hợp quốc về chống tham nhũng [42, 43]."
   },
   {
-    pairId: 'pair-29',
-    concept: 'Tiền tệ thế giới',
-    definition: 'Chức năng của tiền khi trao đổi hàng hóa mở rộng ra ngoài biên giới quốc gia',
-    note: 'Tiền phải là tiền vàng hoặc những đồng tiền được công nhận là phương tiện thanh toán quốc tế [32, 33].'
+    "pairId": "pair-29",
+    "concept": "Đấu tranh với luận điệu xuyên tạc",
+    "definition": "Bác bỏ các quan điểm cho rằng chống tham nhũng là 'đấu đá nội bộ'.",
+    "note": "Giữ vững định hướng chính trị và niềm tin của nhân dân [44, 45]."
   },
   {
-    pairId: 'pair-30',
-    concept: 'Thị trường',
-    definition: 'Tổng hòa các quan hệ kinh tế dưới tác động của nhu cầu, cung ứng việc trao đổi, mua bán',
-    note: 'Thị trường là tổng thể các quan hệ kinh tế: cung-cầu, giá cả, cạnh tranh [34, 35].'
+    "pairId": "pair-30",
+    "concept": "Khát vọng về xã hội công bằng",
+    "definition": "Mọi người dân đều mong muốn một xã hội liêm chính, minh bạch.",
+    "note": "PCTN đáp ứng nguyện vọng chính đáng của nhân dân [46, 47]."
   },
   {
-    pairId: 'pair-31',
-    concept: 'Nền kinh tế thị trường',
-    definition:
-      'Nền kinh tế được vận hành theo cơ chế thị trường, chịu sự tác động, điều tiết của các quy luật kinh tế',
-    note: 'Là sản phẩm của văn minh nhân loại [36, 37].'
+    "pairId": "pair-31",
+    "concept": "Trách nhiệm tự rèn luyện",
+    "definition": "Mỗi cá nhân phải tự soi, tự sửa, không để lòng tham dẫn dắt.",
+    "note": "Trị tận gốc tham nhũng từ trong suy nghĩ của mỗi người [48, 49]."
   },
   {
-    pairId: 'pair-32',
-    concept: 'Cơ chế thị trường',
-    definition: 'Phương thức cơ bản để phân phối và sử dụng các nguồn lực trên nền kinh tế thị trường',
-    note: 'Mang tính khách quan, tự điều chỉnh theo yêu cầu của quy luật kinh tế [36, 37].'
+    "pairId": "pair-32",
+    "concept": "Cơ chế để dân tham gia quản lý",
+    "definition": "Nhà nước tạo điều kiện để công dân tham gia thực hiện quyền làm chủ thực sự.",
+    "note": "Xây dựng Nhà nước của dân, do dân, vì dân [50-52]."
   },
   {
-    pairId: 'pair-33',
-    concept: 'Quy luật cung - cầu',
-    definition: 'Quy luật điều tiết quan hệ giữa cung (bên bán) và cầu (bên mua) hàng hóa trên thị trường',
-    note: 'Quy luật này đòi hỏi cung - cầu phải có sự thống nhất [38, 39].'
+    "pairId": "pair-33",
+    "concept": "Trách nhiệm bảo vệ của cải xã hội",
+    "definition": "Tiết kiệm, chống lãng phí của công trong sinh hoạt và công tác.",
+    "note": "Lãng phí cũng nguy hại như tham nhũng [53, 54]."
   },
   {
-    pairId: 'pair-34',
-    concept: 'Quy luật lưu thông tiền tệ',
-    definition: 'Yêu cầu việc lưu thông tiền tệ phải căn cứ trên yêu cầu của lưu thông hàng hóa và dịch vụ',
-    note: 'Số lượng tiền cần thiết tỷ lệ thuận với tổng giá cả hàng hóa, tỷ lệ nghịch với tốc độ lưu thông của tiền tệ [40, 41].'
+    "pairId": "pair-34",
+    "concept": "Vai trò của báo chí đối với công dân",
+    "definition": "Cung cấp thông tin và tiếp nhận phản ánh của dân về tham nhũng.",
+    "note": "Báo chí là kênh quan trọng để dân thực hiện quyền giám sát [22, 35, 55]."
   },
   {
-    pairId: 'pair-35',
-    concept: 'Cạnh tranh',
-    definition: 'Sự ganh đua giữa những chủ thể kinh tế với nhau nhằm thu được lợi ích tối đa',
-    note: 'Là quy luật kinh tế điều tiết quan hệ giữa các chủ thể sản xuất và trao đổi hàng hóa [42, 43].'
+    "pairId": "pair-35",
+    "concept": "Nghĩa vụ tố giác tội phạm",
+    "definition": "Nếu biết hành vi tham nhũng cấu thành tội phạm mà không tố giác sẽ bị xử lý pháp luật.",
+    "note": "Trách nhiệm hình sự đối với việc không tố giác tội phạm [56]."
   },
   {
-    pairId: 'pair-36',
-    concept: 'Cạnh tranh nội bộ ngành',
-    definition: 'Cạnh tranh giữa các chủ thể kinh doanh trong cùng một ngành hàng hóa',
-    note: 'Hình thành giá trị xã hội thấp hơn giá trị cá biệt [42, 43].'
+    "pairId": "pair-36",
+    "concept": "Trách nhiệm giám sát cán bộ lãnh đạo",
+    "definition": "Nhân dân chú trọng giám sát tính nêu gương của người đứng đầu.",
+    "note": "Người đứng đầu sai phạm gây hậu quả rất nghiêm trọng [14, 57]."
   },
   {
-    pairId: 'pair-37',
-    concept: 'Cạnh tranh giữa các ngành',
-    definition: 'Cạnh tranh giữa các chủ thể kinh doanh giữa các ngành khác nhau',
-    note: 'Là phương thức tìm kiếm lợi nhuận bình quân [44, 45].'
+    "pairId": "pair-37",
+    "concept": "Ý nghĩa của việc công khai kết quả xử lý",
+    "definition": "Để nhân dân biết, tin tưởng và tiếp tục đồng hành cùng Đảng, Nhà nước.",
+    "note": "Định hướng dư luận và thể hiện sự minh bạch [22, 58, 59]."
   },
   {
-    pairId: 'pair-38',
-    concept: 'Người sản xuất hàng hóa',
-    definition: 'Những người sản xuất và cung cấp hàng hóa, dịch vụ ra thị trường',
-    note: 'Nhiệm vụ là thỏa mãn nhu cầu xã hội và tối đa hóa lợi nhuận [46, 47].'
+    "pairId": "pair-38",
+    "concept": "Phòng ngừa là chính",
+    "definition": "Xây dựng cơ chế để công dân và cán bộ không thể và không muốn tham nhũng.",
+    "note": "Chiến lược lâu dài và bền vững [11, 60, 61]."
   },
   {
-    pairId: 'pair-39',
-    concept: 'Người tiêu dùng',
-    definition: 'Những người mua hàng hóa, dịch vụ trên thị trường để thỏa mãn nhu cầu tiêu dùng',
-    note: 'Là yếu tố quyết định sự phát triển của người sản xuất [48, 49].'
+    "pairId": "pair-39",
+    "concept": "Chống là quan trọng, cấp bách",
+    "definition": "Xử lý nghiêm minh để làm gương và răn đe kẻ có ý định tham nhũng.",
+    "note": "Cần sự quyết liệt, không có vùng cấm [11, 62, 63]."
   },
   {
-    pairId: 'pair-40',
-    concept: 'Chủ thể trung gian',
-    definition: 'Những cá nhân, tổ chức đảm nhiệm vai trò cầu nối các chủ thể sản xuất, tiêu dùng, trao đổi',
-    note: 'Làm tăng cơ hội thực hiện giá trị hàng hóa và thỏa mãn nhu cầu người tiêu dùng [48, 49].'
+    "pairId": "pair-40",
+    "concept": "Trách nhiệm của công dân trong bầu cử",
+    "definition": "Lựa chọn những người đủ đức, đủ tài, không có biểu hiện tham nhũng vào bộ máy.",
+    "note": "Sàng lọc cán bộ ngay từ khâu lựa chọn đại biểu [64, 65]."
   },
-
-  // Chương 3: Giá trị thặng dư trong nền kinh tế thị trường
   {
-    pairId: 'pair-41',
-    concept: "Công thức chung của tư bản (T-H-T')",
-    definition: "Sự vận động của tiền tệ nhằm mang lại giá trị thặng dư (T' > T)",
-    note: 'Khác biệt với lưu thông hàng hóa đơn thuần (H-T-H) [50-53].'
+    "pairId": "pair-41",
+    "concept": "Tham nhũng gây bất bình đẳng xã hội",
+    "definition": "Lợi ích bị nhóm nhỏ chiếm đoạt, tước đoạt cơ hội của người nghèo.",
+    "note": "Làm tăng khoảng cách giàu nghèo và xung đột xã hội [66, 67]."
   },
   {
-    pairId: 'pair-42',
-    concept: 'Tư bản',
-    definition: 'Tiền (hoặc giá trị) vận động nhằm mục đích mang lại giá trị thặng dư',
-    note: 'Tiền chỉ trở thành tư bản khi mang lại giá trị thặng dư [52, 53].'
+    "pairId": "pair-42",
+    "concept": "Trách nhiệm tuyên truyền PCTN",
+    "definition": "Vận động gia đình và người xung quanh cùng tham gia phòng, chống tiêu cực.",
+    "note": "Mỗi công dân là một tuyên truyền viên về liêm chính [58, 68]."
   },
   {
-    pairId: 'pair-43',
-    concept: 'Sức lao động',
-    definition:
-      'Toàn bộ những năng lực thể chất và tinh thần tồn tại trong con người, được người lao động đem ra vận dụng khi sản xuất',
-    note: 'Phải được thể hiện bằng thể chất và có đủ tư liệu sản xuất cần thiết [52, 53].'
+    "pairId": "pair-43",
+    "concept": "Kiểm soát tài sản, thu nhập",
+    "definition": "Nhân dân giám sát việc kê khai tài sản của cán bộ tại nơi cư trú.",
+    "note": "Đảm bảo tính trung thực trong kê khai [41, 69]."
   },
   {
-    pairId: 'pair-44',
-    concept: 'Giá trị sử dụng của sức lao động',
-    definition: 'Khả năng tạo ra giá trị mới lớn hơn giá trị của bản thân nó',
-    note: 'Là chìa khóa khai thác nguồn gốc của giá trị thặng dư [54, 55].'
+    "pairId": "pair-44",
+    "concept": "Vai trò của trí thức trong PCTN",
+    "definition": "Đóng góp trí tuệ để hoàn thiện thể chế và nâng cao nhận thức xã hội.",
+    "note": "Lực lượng nòng cốt trong xây dựng lý luận và chính sách [70, 71]."
   },
   {
-    pairId: 'pair-45',
-    concept: 'Giá trị thặng dư (m)',
-    definition: 'Bộ phận giá trị mới dôi ra ngoài giá trị sức lao động do người lao động tạo ra',
-    note: 'Là kết quả của lao động không công của công nhân cho tư bản [56-58].'
+    "pairId": "pair-45",
+    "concept": "Trách nhiệm đấu tranh với 'lợi ích nhóm'",
+    "definition": "Phát hiện các hành vi móc ngoặc, thông đồng để trục lợi tài sản công.",
+    "note": "Bảo vệ lợi ích chung của quốc gia và nhân dân [72, 73]."
   },
   {
-    pairId: 'pair-46',
-    concept: 'Thời gian lao động tất yếu',
-    definition: 'Thời gian lao động mà người công nhân tạo ra giá trị ngang bằng giá trị sức lao động của mình',
-    note: 'Phần giá trị này dùng để bù đắp giá trị sức lao động [59, 60].'
+    "pairId": "pair-46",
+    "concept": "Tầm quan trọng của kỷ cương xã hội",
+    "definition": "Mọi công dân đều phải sống và làm việc theo Hiến pháp và pháp luật.",
+    "note": "Kỷ cương nghiêm giúp hạn chế môi trường nảy sinh tham nhũng [74, 75]."
   },
   {
-    pairId: 'pair-47',
-    concept: 'Thời gian lao động thặng dư',
-    definition: 'Thời gian lao động mà người công nhân tạo ra giá trị thặng dư cho nhà tư bản',
-    note: 'Phần lao động không được trả công [59, 60].'
+    "pairId": "pair-47",
+    "concept": "Quyền được bảo đảm an toàn khi tố cáo",
+    "definition": "Nhà nước có trách nhiệm bảo mật thông tin và bảo vệ tính mạng người tố cáo.",
+    "note": "Để công dân yên tâm thực hiện trách nhiệm [36, 76]."
   },
   {
-    pairId: 'pair-48',
-    concept: 'Tư bản khả biến (v)',
-    definition: 'Bộ phận tư bản dùng để mua hàng hóa sức lao động',
-    note: 'Giá trị của nó biến đổi, tạo ra giá trị mới lớn hơn giá trị ban đầu [61, 62].'
+    "pairId": "pair-48",
+    "concept": "Hành vi giả mạo trong công tác",
+    "definition": "Lợi dụng quyền hạn để làm sai lệch văn bản vì vụ lợi.",
+    "note": "Một trong 12 hành vi tham nhũng điển hình [77, 78]."
   },
   {
-    pairId: 'pair-49',
-    concept: 'Công thức giá trị hàng hóa (G)',
-    definition: 'Tổng giá trị của hàng hóa được biểu diễn là $G = c + (v + m)$',
-    note: 'Trong đó (v+m) là bộ phận giá trị mới của hàng hóa [61, 62].'
+    "pairId": "pair-49",
+    "concept": "Trách nhiệm của công nhân trong PCTN",
+    "definition": "Giám sát việc quản lý tài sản tại các doanh nghiệp nhà nước.",
+    "note": "Công nhân là lực lượng tiên phong trong sản xuất và quản lý [79, 80]."
   },
   {
-    pairId: 'pair-50',
-    concept: 'Tư bản cố định',
-    definition: 'Bộ phận tư bản bất biến tồn tại dưới hình thái tư liệu lao động (máy móc, nhà xưởng)',
-    note: 'Giá trị hao mòn dần và chuyển vào sản phẩm theo mức độ hao mòn [63, 64].'
+    "pairId": "pair-50",
+    "concept": "PCTN góp phần xây dựng Nhà nước pháp quyền",
+    "definition": "Đảm bảo pháp luật được thực thi công bằng, nghiêm minh với mọi đối tượng.",
+    "note": "Không ai đứng trên pháp luật [52, 81]."
   },
   {
-    pairId: 'pair-51',
-    concept: 'Tư bản lưu động',
-    definition: 'Bộ phận tư bản tồn tại dưới hình thái sức lao động, nguyên nhiên vật liệu, phụ liệu',
-    note: 'Giá trị được chuyển toàn bộ vào sản phẩm sau một chu kỳ sản xuất [63, 64].'
+    "pairId": "pair-51",
+    "concept": "Nhân dân là chủ thể của dân chủ",
+    "definition": "Mọi quyền lực nhà nước đều thuộc về nhân dân.",
+    "note": "Cơ sở để nhân dân kiểm soát các cơ quan nhà nước [82, 83]."
   },
   {
-    pairId: 'pair-52',
-    concept: "Tỷ suất giá trị thặng dư (m')",
-    definition: 'Tỷ lệ phần trăm giữa giá trị thặng dư (m) và tư bản khả biến (v)',
-    note: "Công thức: $m' = \\frac{m}{v} \\times 100\\%$ [65, 66]."
+    "pairId": "pair-52",
+    "concept": "Trách nhiệm bài trừ thói 'móc ngoặc'",
+    "definition": "Không sử dụng quan hệ cá nhân để làm sai phép nước vì lợi ích riêng.",
+    "note": "Xóa bỏ tư tưởng đặc quyền, đặc lợi [84, 85]."
   },
   {
-    pairId: 'pair-53',
-    concept: 'Khối lượng giá trị thặng dư (M)',
-    definition: 'Tổng số lượng giá trị thặng dư mà nhà tư bản thu được',
-    note: "Công thức: $M = m' \\cdot V$ (V là tổng tư bản khả biến) [67, 68]."
+    "pairId": "pair-53",
+    "concept": "PCTN là cuộc chiến cam go, quyết liệt",
+    "definition": "Đòi hỏi sự kiên trì, bền bỉ của cả dân tộc.",
+    "note": "Không thể nóng vội, chủ quan [25, 86, 87]."
   },
   {
-    pairId: 'pair-54',
-    concept: 'Sản xuất giá trị thặng dư tuyệt đối',
-    definition: 'Giá trị thặng dư thu được do kéo dài ngày lao động vượt quá thời gian lao động tất yếu',
-    note: 'Chủ yếu áp dụng trong giai đoạn đầu của chủ nghĩa tư bản [67, 68].'
+    "pairId": "pair-54",
+    "concept": "Trách nhiệm với gia đình trong PCTN",
+    "definition": "Giáo dục con cháu sống trung thực, không tham lam của công.",
+    "note": "Gia đình là tế bào, là nơi rèn luyện đạo đức đầu tiên [68, 88]."
   },
   {
-    pairId: 'pair-55',
-    concept: 'Sản xuất giá trị thặng dư tương đối',
-    definition: 'Giá trị thặng dư thu được nhờ rút ngắn thời gian lao động tất yếu',
-    note: 'Làm giảm giá trị sức lao động bằng cách giảm giá trị tư liệu sinh hoạt [69, 70].'
+    "pairId": "pair-55",
+    "concept": "Tố cáo đúng người, đúng tội",
+    "definition": "Tránh việc tố cáo tràn lan không có căn cứ gây ảnh hưởng cán bộ tốt.",
+    "note": "Đảm bảo tính nhân văn và công bằng [89, 90]."
   },
   {
-    pairId: 'pair-56',
-    concept: 'Giá trị thặng dư siêu ngạch',
-    definition: 'Phần giá trị thặng dư thu thêm được so với xã hội trong những trường hợp cá biệt',
-    note: 'Là hình thái điển hình của giá trị thặng dư tương đối [69, 70].'
+    "pairId": "pair-56",
+    "concept": "Quyền được biết về ngân sách địa phương",
+    "definition": "Công dân giám sát việc thu chi để ngăn chặn tham ô tài sản công.",
+    "note": "Tăng cường minh bạch ở cấp cơ sở [18, 91]."
   },
   {
-    pairId: 'pair-57',
-    concept: 'Tích lũy tư bản',
-    definition: 'Quá trình sản xuất tư bản chủ nghĩa lặp đi lặp lại không ngừng',
-    note: 'Có hai hình thức: tích lũy giản đơn và tích lũy mở rộng [71, 72].'
+    "pairId": "pair-57",
+    "concept": "Vai trò của thanh niên trong PCTN",
+    "definition": "Lực lượng xung kích, nhạy bén, dám đấu tranh với cái xấu.",
+    "note": "Thanh niên cần giữ bàn tay sạch và tâm trong sáng [92, 93]."
   },
   {
-    pairId: 'pair-58',
-    concept: 'Tích tụ tư bản',
-    definition: 'Sự tăng quy mô của tư bản bằng cách biến một phần giá trị thặng dư thành tư bản phụ thêm',
-    note: 'Là kết quả trực tiếp của tích lũy tư bản [73, 74].'
+    "pairId": "pair-58",
+    "concept": "PCTN giúp ổn định chính trị",
+    "definition": "Ngăn chặn các thế lực thù địch lợi dụng tiêu cực để chống phá chế độ.",
+    "note": "Giữ vững sự bình yên của đất nước [33, 94]."
   },
   {
-    pairId: 'pair-59',
-    concept: 'Tập trung tư bản',
-    definition: 'Sự tăng lên của quy mô tư bản cá biệt không làm tăng quy mô tư bản xã hội',
-    note: 'Thực hiện thông qua sáp nhập các tư bản cá biệt [73, 74].'
+    "pairId": "pair-59",
+    "concept": "Trách nhiệm phản bác luận điệu sai trái",
+    "definition": "Phê phán những thông tin xuyên tạc về công tác PCTN của Đảng.",
+    "note": "Bảo vệ uy tín của tổ chức và lãnh đạo [58, 95, 96]."
   },
   {
-    pairId: 'pair-60',
-    concept: 'Cấu tạo kỹ thuật của tư bản',
-    definition: 'Mối quan hệ giữa số lượng tư liệu sản xuất và số lượng lao động được sử dụng',
-    note: 'Quyết định bởi trình độ kỹ thuật và phản ánh sự biến đổi của nó [75, 76].'
+    "pairId": "pair-60",
+    "concept": "Tình đồng chí trong đấu tranh PCTN",
+    "definition": "Thẳng thắn giúp đỡ đồng nghiệp thấy sai để sửa, không bao che.",
+    "note": "Thương yêu đồng chí đúng cách là không dung túng khuyết điểm [97, 98]."
   },
   {
-    pairId: 'pair-61',
-    concept: 'Cấu tạo hữu cơ của tư bản (c/v)',
-    definition: 'Tỷ lệ giữa tư bản bất biến (c) và tư bản khả biến (v) xét về mặt giá trị',
-    note: 'Tăng lên không ngừng trong quá trình tích lũy [75, 76].'
+    "pairId": "pair-61",
+    "concept": "Trách nhiệm phát hiện lãng phí",
+    "definition": "Lên án việc chi tiêu xa hoa, phô trương từ ngân sách nhà nước.",
+    "note": "Lãng phí của công là tội ác với nhân dân [99, 100]."
   },
   {
-    pairId: 'pair-62',
-    concept: 'Chi phí sản xuất (k)',
-    definition: 'Bộ phận giá trị của hàng hóa, bao gồm giá trị tư liệu sản xuất tiêu dùng và giá trị sức lao động',
-    note: 'Công thức: $k = c + v$ [77, 78].'
+    "pairId": "pair-62",
+    "concept": "Tham nhũng vặt làm xói mòn niềm tin",
+    "definition": "Các hành vi nhũng nhiễu nhỏ nhưng diễn ra thường xuyên ở cơ sở.",
+    "note": "Công dân cần kiên quyết nói không với việc đưa hối lộ nhỏ [101, 102]."
   },
   {
-    pairId: 'pair-63',
-    concept: 'Lợi nhuận (p)',
-    definition: 'Khoản chênh lệch bằng giá trị thặng dư được thu về sau khi bù đắp chi phí sản xuất',
-    note: 'Lợi nhuận là hình thái chuyển hóa của giá trị thặng dư trên bề mặt thị trường [77, 78].'
+    "pairId": "pair-63",
+    "concept": "Trách nhiệm tuân thủ Hiến pháp",
+    "definition": "Hiến pháp quy định quyền giám sát của nhân dân đối với Nhà nước.",
+    "note": "Cơ sở pháp lý cao nhất cho hoạt động của công dân [103, 104]."
   },
   {
-    pairId: 'pair-64',
-    concept: "Tỷ suất lợi nhuận (p')",
-    definition: 'Tỷ lệ phần trăm giữa lợi nhuận (p) và toàn bộ giá trị của tư bản ứng trước (c+v)',
-    note: "Công thức: $p' = \\frac{p}{c+v} \\times 100\\%$ [79, 80]."
+    "pairId": "pair-64",
+    "concept": "PCTN góp phần phát triển kinh tế",
+    "definition": "Thu hồi tài sản thất thoát để đầu tư vào dân sinh, phúc lợi.",
+    "note": "Lợi ích vật chất của dân được bảo đảm [105, 106]."
   },
   {
-    pairId: 'pair-65',
-    concept: 'Lợi nhuận bình quân ($\\bar{P}$)',
-    definition: 'Số lợi nhuận bằng nhau mà nhà tư bản thu được khi đầu tư vào các ngành khác nhau',
-    note: 'Hình thành do cạnh tranh giữa các ngành [81, 82].'
+    "pairId": "pair-65",
+    "concept": "Hành vi lợi dụng chức vụ để bao che",
+    "definition": "Dùng quyền hạn để ngăn cản việc điều tra, xử lý người vi phạm.",
+    "note": "Một hành vi tham nhũng nguy hiểm cần bị lên án [107, 108]."
   },
   {
-    pairId: 'pair-66',
-    concept: 'Giá cả sản xuất (GCSX)',
-    definition: 'Giá cả hàng hóa chuyển hóa thành giá cả có lợi nhuận bình quân',
-    note: 'Công thức: $GCSX = k + \\bar{P}$ [81, 82].'
+    "pairId": "pair-66",
+    "concept": "Trách nhiệm bảo vệ môi trường liêm chính",
+    "definition": "Cùng xã hội xây dựng các chuẩn mực đạo đức mới.",
+    "note": "Làm lành mạnh hóa các mối quan hệ xã hội [81, 109]."
   },
   {
-    pairId: 'pair-67',
-    concept: 'Lợi nhuận thương nghiệp',
-    definition: 'Phần chênh lệch giữa giá bán và giá mua hàng hóa của nhà tư bản thương nghiệp',
-    note: 'Là một phần của giá trị thặng dư được nhường lại cho tư bản thương nghiệp [83, 84].'
+    "pairId": "pair-67",
+    "concept": "Nhân dân giám sát thi hành án",
+    "definition": "Đảm bảo tài sản tham nhũng được thu hồi triệt để thực tế.",
+    "note": "Tăng tỷ lệ thu hồi tài sản là yêu cầu của dân [105, 110]."
   },
   {
-    pairId: 'pair-68',
-    concept: 'Lợi tức',
-    definition: 'Phần của lợi nhuận bình quân mà người vay trả cho người cho vay vì sử dụng lượng tiền nhàn rỗi',
-    note: 'Nguồn gốc là giá trị thặng dư sinh ra do sử dụng tiền vay [83, 84].'
+    "pairId": "pair-68",
+    "concept": "Sự thống nhất giữa ý Đảng và lòng dân",
+    "definition": "Quyết tâm của lãnh đạo Đảng phù hợp với mong mỏi của nhân dân.",
+    "note": "Tạo ra sức mạnh tổng hợp vô địch [111, 112]."
   },
   {
-    pairId: 'pair-69',
-    concept: 'Tư bản cho vay',
-    definition: "Hình thái biến tướng điển hình nhất của tư bản, vận động theo công thức T – T'",
-    note: 'Mang đặc điểm: quyền sở hữu tách khỏi quyền sử dụng và là hàng hóa đặc biệt [85, 86].'
+    "pairId": "pair-69",
+    "concept": "Trách nhiệm đối với kiều bào",
+    "definition": "Cung cấp thông tin đúng về tình hình PCTN để kiều bào yên tâm hướng về Tổ quốc.",
+    "note": "Củng cố lòng tin của người Việt Nam ở nước ngoài [113, 114]."
   },
   {
-    pairId: 'pair-70',
-    concept: 'Địa tô tư bản chủ nghĩa',
-    definition:
-      'Lợi nhuận siêu ngạch hoặc lợi nhuận bình quân còn lại sau khi trừ đi lợi nhuận bình quân của nhà tư bản kinh doanh nông nghiệp',
-    note: 'Phần giá trị thặng dư mà nhà tư bản trả cho địa chủ [87, 88].'
+    "pairId": "pair-70",
+    "concept": "PCTN không làm 'nhụt chí' người dám nghĩ",
+    "definition": "Chỉ làm chùn bước những ai có động cơ không trong sáng.",
+    "note": "Khẳng định để thúc đẩy sự sáng tạo đúng đắn [45, 94]."
   },
   {
-    pairId: 'pair-71',
-    concept: 'Địa tô chênh lệch I',
-    definition: 'Phần lợi nhuận siêu ngạch thu được do độ màu mỡ và vị trí đất đai thuận lợi',
-    note: 'Địa tô này tồn tại thường xuyên [87, 88].'
+    "pairId": "pair-71",
+    "concept": "Quyền của Ban thanh tra nhân dân",
+    "definition": "Tiếp nhận phản ánh của dân về tham nhũng tại cơ sở.",
+    "note": "Kênh giám sát trực tiếp của nhân dân tại địa phương [115]."
   },
   {
-    pairId: 'pair-72',
-    concept: 'Địa tô tuyệt đối',
-    definition: 'Địa tô mà nhà tư bản phải trả cho địa chủ dù đất đai có tốt hay xấu',
-    note: 'Nguồn gốc là lợi nhuận siêu ngạch và lợi nhuận bình quân [87, 88].'
+    "pairId": "pair-72",
+    "concept": "Trách nhiệm khi phát hiện dấu hiệu phạm tội",
+    "definition": "Chuyển hồ sơ, thông tin ngay cho cơ quan điều tra.",
+    "note": "Không chờ đợi, tránh để đối tượng tẩu tán tài sản [116, 117]."
   },
   {
-    pairId: 'pair-73',
-    concept: 'Giá cả đất đai',
-    definition: 'Biểu hiện bằng tiền của địa tô',
-    note: 'Tính trên cơ sở so sánh với tỷ suất lợi tức ngắn hạn ngân hàng (Địa tô / Tỷ suất lợi tức) [58, 89].'
+    "pairId": "pair-73",
+    "concept": "Sự minh bạch trong quản lý đất đai",
+    "definition": "Công dân giám sát việc quy hoạch và sử dụng đất để tránh trục lợi.",
+    "note": "Lĩnh vực dễ xảy ra tham nhũng lớn [91, 102]."
   },
-
-  // Chương 4: Cạnh tranh và Độc quyền trong nền kinh tế thị trường
   {
-    pairId: 'pair-74',
-    concept: 'Độc quyền',
-    definition: 'Sự liên minh giữa các doanh nghiệp lớn, có khả năng chi phối sản xuất và giá cả để thu lợi nhuận cao',
-    note: 'Kết quả của quá trình tích tụ và tập trung sản xuất [90, 91].'
+    "pairId": "pair-74",
+    "concept": "Hành vi nhận hối lộ",
+    "definition": "Lợi dụng chức vụ để nhận tiền, tài sản hoặc lợi ích khác để làm một việc theo yêu cầu.",
+    "note": "Tội phạm tham nhũng phổ biến nhất [1, 77]."
   },
   {
-    pairId: 'pair-75',
-    concept: 'Lợi nhuận độc quyền',
-    definition: 'Khoản lợi nhuận cao thu được từ hoạt động độc quyền',
-    note: 'Nguồn gốc là do lao động không công của công nhân và giá trị thặng dư của các nhà tư bản nhỏ [92, 93].'
+    "pairId": "pair-75",
+    "concept": "Ý nghĩa của việc 'Nhốt quyền lực vào lồng cơ chế'",
+    "definition": "Thiết lập quy định để kiểm soát chặt chẽ người có quyền hành.",
+    "note": "Dân giám sát để cơ chế này vận hành đúng [118, 119]."
   },
   {
-    pairId: 'pair-76',
-    concept: 'Giá cả độc quyền',
-    definition: 'Giá cả do các tổ chức độc quyền áp đặt trên thị trường',
-    note: 'Thường cao khi bán và thấp khi mua [92, 93].'
+    "pairId": "pair-76",
+    "concept": "Trách nhiệm của mỗi đảng viên là công dân",
+    "definition": "Phải đi trước để nhân dân theo sau trong PCTN.",
+    "note": "Tính tiên phong gương mẫu của người cộng sản [120, 121]."
   },
   {
-    pairId: 'pair-77',
-    concept: 'Độc quyền Nhà nước',
-    definition: 'Kiểu độc quyền trong đó Nhà nước thực hiện nắm giữ vị thế độc quyền dựa trên sức mạnh của nó',
-    note: 'Là sự kết hợp sức mạnh của độc quyền tư nhân và sức mạnh Nhà nước [94, 95].'
+    "pairId": "pair-77",
+    "concept": "PCTN gắn liền với chỉnh đốn Đảng",
+    "definition": "Làm trong sạch bộ máy để phục vụ nhân dân tốt hơn.",
+    "note": "Nhiệm vụ then chốt của cách mạng [122, 123]."
   },
   {
-    pairId: 'pair-78',
-    concept: 'Xã hội hóa sản xuất',
-    definition: 'Sự phát triển của phân công lao động, sản xuất tập trung quy mô lớn',
-    note: 'Là nguồn gốc khách quan của độc quyền [94, 95].'
+    "pairId": "pair-78",
+    "concept": "Nhân dân ủng hộ 'Người nhóm lò'",
+    "definition": "Tin tưởng vào sự chỉ đạo quyết liệt của Tổng Bí thư.",
+    "note": "Biểu tượng của sự kiên định trong PCTN [124, 125]."
   },
   {
-    pairId: 'pair-79',
-    concept: 'Cartel (Các-ten)',
-    definition: 'Tổ chức độc quyền dựa trên thỏa thuận về giá cả, sản lượng hàng hóa, thị trường, kỳ hạn thanh toán',
-    note: 'Các xí nghiệp tham gia giữ độc lập cả về sản xuất và lưu thông [96, 97].'
+    "pairId": "pair-79",
+    "concept": "Trách nhiệm chống tư tưởng 'bàn lùi'",
+    "definition": "Phê phán thái độ làm việc cầm chừng, sợ trách nhiệm.",
+    "note": "Tư tưởng này cản trở sự phát triển của đất nước [126, 127]."
   },
   {
-    pairId: 'pair-80',
-    concept: 'Syndicate (Xanh-đi-ca)',
-    definition:
-      'Tổ chức độc quyền trong đó các xí nghiệp giữ độc lập về sản xuất, nhưng chung nhau độc quyền lưu thông',
-    note: 'Mục đích là thống nhất mua bán nguyên liệu và bán hàng hóa để thu lợi nhuận độc quyền [96, 97].'
+    "pairId": "pair-80",
+    "concept": "Công dân với cải cách hành chính",
+    "definition": "Giám sát quy trình thủ tục để không còn kẽ hở cho nhũng nhiễu.",
+    "note": "Giảm phiền hà cho người dân và doanh nghiệp [128, 129]."
   },
   {
-    pairId: 'pair-81',
-    concept: 'Trust (Tơ-rớt)',
-    definition: 'Tổ chức độc quyền mà các xí nghiệp tham gia mất độc lập cả về sản xuất và lưu thông',
-    note: 'Các xí nghiệp trở thành cổ đông của một công ty quản lý chung [96, 97].'
+    "pairId": "pair-81",
+    "concept": "Giá trị của sự trung thực",
+    "definition": "Là phẩm chất cốt lõi của con người trong xã hội xã hội chủ nghĩa.",
+    "note": "Nền tảng của đạo đức cách mạng [130, 131]."
   },
   {
-    pairId: 'pair-82',
-    concept: 'Tư bản tài chính',
-    definition: 'Sự liên minh giữa tư bản độc quyền trong công nghiệp và ngân hàng',
-    note: 'Đại diện cho tầng lớp tư bản độc quyền chi phối bộ máy Nhà nước [98, 99].'
+    "pairId": "pair-82",
+    "concept": "Trách nhiệm phát hiện hành vi biển thủ",
+    "definition": "Tố giác việc lấy tài sản công phục vụ mục đích cá nhân.",
+    "note": "Bảo vệ tài sản của toàn dân [104, 132]."
   },
   {
-    pairId: 'pair-83',
-    concept: 'Xuất khẩu tư bản',
-    definition: 'Đưa tư bản ra nước ngoài nhằm mục đích thu lợi nhuận độc quyền cao',
-    note: 'Có hai hình thức: trực tiếp (FDI) và gián tiếp [100, 101].'
+    "pairId": "pair-83",
+    "concept": "Dân chủ là bản chất của chế độ",
+    "definition": "Mọi hoạt động PCTN đều phải dựa trên nền tảng dân chủ.",
+    "note": "Dân chủ thực chất giúp đẩy lùi tiêu cực [133, 134]."
   },
-
-  // Chương 5: Kinh tế thị trường định hướng xã hội chủ nghĩa và Quan hệ lợi ích kinh tế ở Việt Nam
   {
-    pairId: 'pair-84',
-    concept: 'Kinh tế thị trường định hướng XHCN',
-    definition: 'Kinh tế hàng hóa vận hành theo cơ chế thị trường nhưng có sự quản lý, điều tiết của Nhà nước XHCN',
-    note: "Hướng tới mục tiêu 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh' [102-105]."
+    "pairId": "pair-84",
+    "concept": "Trách nhiệm tham gia phản biện xã hội",
+    "definition": "Đóng góp ý kiến về các dự án lớn có nguy cơ thất thoát vốn nhà nước.",
+    "note": "Giám sát từ khi dự án còn trên giấy tờ [21, 135]."
   },
   {
-    pairId: 'pair-85',
-    concept: 'Mục tiêu KTTT định hướng XHCN',
-    definition:
-      "Phát triển lực lượng sản xuất, xây dựng cơ sở vật chất, nâng cao đời sống nhân dân, đạt 'dân giàu, nước mạnh...'",
-    note: 'Là sự thống nhất giữa mục tiêu kinh tế thị trường tư bản chủ nghĩa và mục tiêu xã hội [106, 107].'
+    "pairId": "pair-85",
+    "concept": "Hành vi lạm dụng chức vụ để chiếm đoạt tài sản",
+    "definition": "Dùng quyền hạn để biến tài sản người khác hoặc nhà nước thành của mình.",
+    "note": "Một trong những hành vi tham nhũng bị xử lý hình sự [77, 78]."
   },
   {
-    pairId: 'pair-86',
-    concept: 'Nội dung kinh tế của sở hữu',
-    definition: 'Biểu hiện ở khả năng chiếm hữu nguồn lực và kết quả lao động, mang lại lợi ích kinh tế cho chủ sở hữu',
-    note: 'Chủ sở hữu chịu trách nhiệm trực tiếp vào quá trình sản xuất [108, 109].'
+    "pairId": "pair-86",
+    "concept": "Công dân với việc xây dựng Đảng",
+    "definition": "Giới thiệu những người xứng đáng vào hàng ngũ của Đảng.",
+    "note": "Góp phần nâng cao sức chiến đấu của Đảng [136, 137]."
   },
   {
-    pairId: 'pair-87',
-    concept: 'Thế chế kinh tế',
-    definition: 'Hệ thống quy tắc, luật pháp, bộ máy quản lý và cơ chế vận hành nhằm điều chỉnh các hoạt động kinh tế',
-    note: 'Là nền tảng để thực hiện điều chỉnh vĩ mô và vi mô [110, 111].'
+    "pairId": "pair-87",
+    "concept": "Sự công minh của pháp luật",
+    "definition": "Mọi sai phạm đều phải bị xử lý, không có ngoại lệ.",
+    "note": "Niềm tin vào công lý được củng cố [138, 139]."
   },
   {
-    pairId: 'pair-88',
-    concept: 'Lợi ích kinh tế',
-    definition: 'Sự thỏa mãn nhu cầu vật chất và tinh thần mà con người nhận được thông qua hoạt động kinh tế',
-    note: 'Là động lực trực tiếp của các hoạt động kinh tế [112-115].'
+    "pairId": "pair-88",
+    "concept": "Trách nhiệm lên án lối sống xa hoa",
+    "definition": "Phê phán cán bộ hưởng lạc trên sự nghèo khó của dân.",
+    "note": "Bảo vệ phẩm giá và đạo đức cộng sản [100, 140]."
   },
   {
-    pairId: 'pair-89',
-    concept: 'Lợi ích cá nhân',
-    definition: 'Sự thỏa mãn nhu cầu cá nhân, là cơ sở, nền tảng của các loại lợi ích khác',
-    note: 'Là động lực trực tiếp cho các chủ thể và hoạt động kinh tế - xã hội [116, 117].'
+    "pairId": "pair-89",
+    "concept": "Vai trò của trí thức trẻ",
+    "definition": "Sáng tạo trong các giải pháp công nghệ để quản lý minh bạch.",
+    "note": "Chuyển đổi số giúp hạn chế tham nhũng trực tiếp [102]."
   },
   {
-    pairId: 'pair-90',
-    concept: 'Lợi ích tập thể/nhóm',
-    definition: 'Lợi ích liên kết cá nhân với cộng đồng, thực hiện thông qua hợp tác, tổ chức',
-    note: 'Các tổ chức kinh tế cùng nhau hành động để thực hiện lợi ích chung [116, 117].'
+    "pairId": "pair-90",
+    "concept": "Nghĩa vụ bảo vệ nền tảng tư tưởng",
+    "definition": "Chống lại các thế lực lợi dụng PCTN để chia rẽ Đảng và dân.",
+    "note": "Giữ vững sự ổn định của đất nước [141, 142]."
   },
   {
-    pairId: 'pair-91',
-    concept: 'Lợi ích xã hội',
-    definition: 'Tổng hòa của các lợi ích kinh tế, đóng vai trò định hướng cho hoạt động của các chủ thể',
-    note: 'Yêu cầu phải đảm bảo sự thống nhất giữa các lợi ích [116, 117].'
+    "pairId": "pair-91",
+    "concept": "Trách nhiệm đối với tài nguyên quốc gia",
+    "definition": "Giám sát việc khai thác khoáng sản, bảo vệ tài sản chung.",
+    "note": "Ngăn chặn thất thoát tài sản lớn của đất nước [143, 144]."
   },
   {
-    pairId: 'pair-92',
-    concept: 'Quan hệ lợi ích kinh tế',
-    definition:
-      'Sự tương tác giữa người với người, giữa các cộng đồng, giữa các tổ chức kinh tế và Nhà nước về mục tiêu kinh tế',
-    note: 'Phức tạp, chịu tác động của nhiều yếu tố như lực lượng sản xuất, chính sách Nhà nước [118-121].'
+    "pairId": "pair-92",
+    "concept": "Tham nhũng là 'khuyết tật bẩm sinh' của quyền lực",
+    "definition": "Xảy ra khi quyền lực không được kiểm soát.",
+    "note": "Cần sự giám sát thường xuyên của nhân dân [1, 87]."
   },
   {
-    pairId: 'pair-93',
-    concept: 'Hài hòa các quan hệ lợi ích',
-    definition: 'Đảm bảo sự thống nhất và cân bằng giữa lợi ích cá nhân, tập thể và xã hội',
-    note: 'Cần có sự can thiệp của Nhà nước để quản lý mâu thuẫn [122, 123].'
+    "pairId": "pair-93",
+    "concept": "Trách nhiệm đạo đức của người đứng đầu",
+    "definition": "Phải chịu trách nhiệm nếu để xảy ra tham nhũng trong cơ quan mình.",
+    "note": "Siết chặt kỷ luật từ cấp cao nhất [145, 146]."
   },
-
-  // Chương 6: Công nghiệp hóa, Hiện đại hóa và Hội nhập kinh tế quốc tế của Việt Nam
   {
-    pairId: 'pair-94',
-    concept: 'Công nghiệp hóa',
-    definition:
-      'Quá trình chuyển đổi nền sản xuất xã hội dựa trên lao động thủ công sang nền sản xuất chủ yếu dựa trên lao động bằng máy móc',
-    note: 'Nhằm nâng cao năng suất lao động xã hội [124, 125].'
+    "pairId": "pair-94",
+    "concept": "Công dân với các cơ quan nội chính",
+    "definition": "Tin tưởng và hỗ trợ 'thanh bảo kiếm' và 'lá chắn' của xã hội.",
+    "note": "Phối hợp để bảo vệ công lý [147, 148]."
   },
   {
-    pairId: 'pair-95',
-    concept: 'Cách mạng công nghiệp lần thứ nhất (1.0)',
-    definition: 'Sử dụng năng lượng nước và hơi nước, cơ giới hóa một phần sản xuất',
-    note: 'Diễn ra ở Anh, bắt đầu từ giữa thế kỷ XVIII đến giữa thế kỷ XIX [126, 127].'
+    "pairId": "pair-95",
+    "concept": "Quyền được thụ hưởng thành quả PCTN",
+    "definition": "Người dân được sống trong môi trường minh bạch, công bằng.",
+    "note": "Mục tiêu cuối cùng của mọi nỗ lực [29, 149]."
   },
   {
-    pairId: 'pair-96',
-    concept: 'Cách mạng công nghiệp lần thứ hai (2.0)',
-    definition: 'Sử dụng năng lượng điện và động cơ điện, tạo ra dây chuyền sản xuất hàng loạt',
-    note: 'Diễn ra vào cuối thế kỷ XIX, đầu thế kỷ XX [126, 127].'
+    "pairId": "pair-96",
+    "concept": "Hành vi nhũng nhiễu vì vụ lợi",
+    "definition": "Gây khó khăn để ép người dân, doanh nghiệp đưa tiền.",
+    "note": "Gây bức xúc lớn trong dư luận xã hội [101, 107]."
   },
   {
-    pairId: 'pair-97',
-    concept: 'Cách mạng công nghiệp lần thứ ba (3.0)',
-    definition: 'Sử dụng công nghệ thông tin và máy tính, tự động hóa sản xuất',
-    note: 'Bắt đầu từ khoảng những năm 60 của thế kỷ XX [126, 127].'
+    "pairId": "pair-97",
+    "concept": "Trách nhiệm gương mẫu của người lãnh đạo",
+    "definition": "Biết xấu hổ khi bản thân hoặc người thân vi phạm.",
+    "note": "Trọng liêm sỉ là nền tảng ngăn chặn tham nhũng [17, 150]."
   },
   {
-    pairId: 'pair-98',
-    concept: 'Cách mạng công nghiệp lần thứ tư (4.0)',
-    definition: 'Liên kết giữa thế giới thực và ảo, hiện thực hóa công việc thông minh và hiệu quả nhất',
-    note: 'Dựa trên sự phát triển của công nghệ số và robot [126-129].'
+    "pairId": "pair-98",
+    "concept": "Dân chủ đi đôi với pháp luật",
+    "definition": "Không được lợi dụng dân chủ để làm loạn.",
+    "note": "Tự do trong khuôn khổ pháp luật [82, 151]."
   },
   {
-    pairId: 'pair-99',
-    concept: 'Hiện đại hóa',
-    definition: 'Quá trình ứng dụng và chuyển giao tiến bộ khoa học công nghệ vào sản xuất',
-    note: 'Thực hiện đồng thời với công nghiệp hóa [130, 131].'
+    "pairId": "pair-99",
+    "concept": "PCTN là việc làm thường xuyên, liên tục",
+    "definition": "Như đánh răng, rửa mặt hàng ngày.",
+    "note": "Không được chủ quan, lơ là [152, 153]."
   },
   {
-    pairId: 'pair-100',
-    concept: 'Công nghiệp hóa, hiện đại hóa ở Việt Nam',
-    definition:
-      'Quá trình chuyển đổi căn bản, toàn diện các hoạt động sản xuất kinh doanh, dịch vụ và quản lý kinh tế - xã hội',
-    note: 'Sử dụng lao động thủ công công nghệ thấp bằng công nghệ tiên tiến, hiện đại [130, 131].'
+    "pairId": "pair-100",
+    "concept": "Trách nhiệm của công dân với ngân sách",
+    "definition": "Đấu tranh chống hành vi trốn thuế, thông đồng với cán bộ thuế.",
+    "note": "Bảo vệ nguồn thu của quốc gia [154]."
   },
   {
-    pairId: 'pair-101',
-    concept: 'Hội nhập kinh tế quốc tế',
-    definition: 'Quá trình một quốc gia gắn kết nền kinh tế của mình với nền kinh tế thế giới',
-    note: 'Được thực hiện trên cơ sở sự chi phối của các chuẩn mực chung quốc tế [132, 133].'
+    "pairId": "pair-101",
+    "concept": "Quyền giám sát việc bổ nhiệm cán bộ",
+    "definition": "Phản ánh kịp thời các trường hợp 'nâng đỡ không trong sáng'.",
+    "note": "Chống chạy chức, chạy quyền [155, 156]."
   },
   {
-    pairId: 'pair-102',
-    concept: 'Toàn cầu hóa (Globalization)',
-    definition: 'Quá trình liên kết và phụ thuộc lẫn nhau ngày càng tăng trên quy mô toàn cầu',
-    note: 'Diễn ra trên nhiều phương diện: kinh tế, chính trị, văn hóa, xã hội [132, 133].'
+    "pairId": "pair-102",
+    "concept": "Trách nhiệm giữ gìn bí mật nhà nước",
+    "definition": "Không tiết lộ thông tin mật dù có bị mua chuộc.",
+    "note": "Bảo vệ an ninh quốc gia gắn liền PCTN [157, 158]."
   },
   {
-    pairId: 'pair-103',
-    concept: 'Toàn cầu hóa kinh tế',
-    definition: 'Sự gia tăng nhanh chóng các hoạt động kinh tế vượt qua biên giới quốc gia, khu vực',
-    note: 'Lôi cuốn tất cả các nước vào hệ thống phân công lao động thế giới [132-135].'
+    "pairId": "pair-103",
+    "concept": "Ý nghĩa của việc khen thưởng tố cáo",
+    "definition": "Động viên và tôn vinh những người dũng cảm vì lợi ích chung.",
+    "note": "Tạo động lực cho xã hội cùng tham gia [159, 160]."
   },
   {
-    pairId: 'pair-104',
-    concept: 'Kinh tế độc lập tự chủ',
-    definition: 'Nền kinh tế không bị lệ thuộc, phụ thuộc vào nước ngoài hoặc các tổ chức kinh tế nước ngoài',
-    note: 'Được xây dựng trên cơ sở phát huy sức mạnh nội tại của quốc gia [136, 137].'
+    "pairId": "pair-104",
+    "concept": "PCTN góp phần bảo vệ đạo đức truyền thống",
+    "definition": "Lá lành đùm lá rách, sống liêm khiết, trung thực.",
+    "note": "Giữ gìn bản sắc văn hóa dân tộc [81, 161]."
   },
-
-  // CÁC KHÁI NIỆM MỞ RỘNG & CHI TIẾT
   {
-    pairId: 'pair-105',
-    concept: 'Kinh tế chính trị cổ điển Anh',
-    definition: 'Phát triển trong thế kỷ XVIII đến nửa đầu thế kỷ XIX, khởi đầu với A.Smith và kết thúc với D.Ricardo',
-    note: 'Đã rút ra quy luật giá trị lao động [138, 139].'
+    "pairId": "pair-105",
+    "concept": "Trách nhiệm với giáo dục liêm chính",
+    "definition": "Đưa nội dung PCTN vào giảng dạy để tạo thế hệ mới trong sạch.",
+    "note": "Bắt đầu từ nhà trường [68, 162]."
   },
   {
-    pairId: 'pair-106',
-    concept: 'Giá trị trao đổi',
-    definition:
-      'Quan hệ về lượng, tỷ lệ trao đổi giữa giá trị sử dụng của loại hàng hóa này với giá trị sử dụng của loại hàng hóa khác',
-    note: 'Là hình thái biểu hiện bên ngoài của giá trị hàng hóa [18, 19].'
+    "pairId": "pair-106",
+    "concept": "Hành vi lợi dụng quyền hạn để trục lợi",
+    "definition": "Tác động đến người khác để lấy lợi ích cá nhân.",
+    "note": "Biểu hiện tinh vi của tham nhũng [77, 163]."
   },
   {
-    pairId: 'pair-107',
-    concept: 'Tác động của Quy luật Giá trị',
-    definition: 'Điều tiết sản xuất và lưu thông hàng hóa; kích thích cải tiến kỹ thuật, hợp lý hóa sản xuất',
-    note: 'Thực hiện qua sự vận động của giá cả xoay quanh giá trị xã hội [140, 141].'
+    "pairId": "pair-107",
+    "concept": "Công dân giám sát đầu tư công",
+    "definition": "Phát hiện các công trình 'rút ruột' gây lãng phí tài sản dân.",
+    "note": "Mọi xu, hào ngân sách đều là mồ hôi của dân [161, 164]."
   },
   {
-    pairId: 'pair-108',
-    concept: 'Hao phí lao động quá khứ',
-    definition: 'Chi phí tư bản bất biến (c) đã tiêu dùng để sản xuất ra hàng hóa',
-    note: 'Thể hiện qua giá trị tư liệu sản xuất đã sử dụng [20, 21].'
+    "pairId": "pair-108",
+    "concept": "Quyền được sống trong xã hội văn minh",
+    "definition": "Nơi tham nhũng bị đẩy lùi và các giá trị đạo đức được tôn trọng.",
+    "note": "Đích đến của dân chủ xã hội chủ nghĩa [149, 165]."
   },
   {
-    pairId: 'pair-109',
-    concept: 'Hao phí lao động mới kết tinh thêm',
-    definition: 'Chi phí tư bản khả biến (v) và giá trị thặng dư (m)',
-    note: 'Do người lao động trực tiếp tạo ra trong quá trình sản xuất [20, 21].'
+    "pairId": "pair-109",
+    "concept": "Trách nhiệm chống chủ nghĩa cá nhân",
+    "definition": "Đặt lợi ích của nhân dân và quốc gia lên trên hết.",
+    "note": "Căn nguyên của mọi tệ nạn [130, 166, 167]."
   },
   {
-    pairId: 'pair-110',
-    concept: 'Giá trị hàng hóa sức lao động',
-    definition:
-      'Đo bằng thời gian lao động xã hội cần thiết để sản xuất ra tư liệu sinh hoạt tái sản xuất sức lao động',
-    note: 'Bao gồm chi phí vật chất và tinh thần [54, 55].'
+    "pairId": "pair-110",
+    "concept": "Sự ủng hộ của bạn bè quốc tế",
+    "definition": "Thế giới ghi nhận quyết tâm chống tham nhũng của Việt Nam.",
+    "note": "Nâng cao vị thế quốc tế của đất nước [168-170]."
   },
   {
-    pairId: 'pair-111',
-    concept: 'Giá trị mới (v+m)',
-    definition: 'Phần giá trị do lao động của người làm thuê tạo ra trong quá trình sản xuất',
-    note: 'Là tổng của tư bản khả biến và giá trị thặng dư [61, 62].'
+    "pairId": "pair-111",
+    "concept": "Trách nhiệm tố cáo hành vi giả mạo",
+    "definition": "Làm hồ sơ giả để hưởng chính sách ưu đãi của nhà nước.",
+    "note": "Xâm phạm lợi ích của những người thực sự xứng đáng [67]."
   },
   {
-    pairId: 'pair-112',
-    concept: 'Tuần hoàn của tư bản',
-    definition: 'Sự vận động của tư bản lần lượt trải qua ba giai đoạn: tiền tệ, sản xuất, hàng hóa',
-    note: "Công thức: $T - H... S X... H' - T'$ [142, 143]."
+    "pairId": "pair-112",
+    "concept": "PCTN gắn liền với thực hành tiết kiệm",
+    "definition": "Tiết kiệm là nền tảng để không nảy sinh tham vọng tham nhũng.",
+    "note": "Lời dạy của Bác Hồ về Cần, Kiệm, Liêm, Chính [25, 99]."
   },
   {
-    pairId: 'pair-113',
-    concept: 'Chu chuyển của tư bản',
-    definition: 'Sự tuần hoàn của tư bản được xét trong mối liên hệ với sự lặp lại và tính chu kỳ của nó',
-    note: 'Đo bằng tổng thời gian của một chu kỳ [142, 143].'
+    "pairId": "pair-113",
+    "concept": "Quyền giám sát tài sản cán bộ hưu trí",
+    "definition": "Theo dõi nếu có sự giàu lên bất thường sau khi rời chức vụ.",
+    "note": "Chống tư tưởng 'hạ cánh an toàn' [171, 172]."
   },
   {
-    pairId: 'pair-114',
-    concept: 'Giá trị thặng dư (Nguồn gốc)',
-    definition: 'Do hao phí sức lao động của người lao động trong quá trình sản xuất',
-    note: 'Người lao động tạo ra giá trị mới lớn hơn giá trị sức lao động [54, 55, 58].'
+    "pairId": "pair-114",
+    "concept": "Trách nhiệm của phụ nữ trong PCTN",
+    "definition": "Xây dựng gia đình văn hóa, không để chồng con sa vào tiêu cực.",
+    "note": "Phụ nữ có vai trò quan trọng trong giữ gìn đạo đức gia đình [173, 174]."
   },
   {
-    pairId: 'pair-115',
-    concept: "Biện pháp tăng Tỷ suất lợi nhuận (p')",
-    definition: 'Tăng tỷ suất giá trị thặng dư, tăng tốc độ chu chuyển của tư bản, tiết kiệm tư bản bất biến',
-    note: "Tỷ suất lợi nhuận chịu ảnh hưởng trực tiếp từ m', c/v, tốc độ chu chuyển [144, 145]."
+    "pairId": "pair-115",
+    "concept": "PCTN giúp củng cố khối đại đoàn kết",
+    "definition": "Sự công bằng làm nhân dân đoàn kết, tin tưởng vào Đảng.",
+    "note": "Động lực phát triển đất nước [175, 176]."
   },
   {
-    pairId: 'pair-116',
-    concept: 'Điều kiện hình thành Lợi nhuận bình quân',
-    definition: 'Cạnh tranh giữa các ngành và sự tự do di chuyển tư bản giữa các ngành sản xuất',
-    note: 'Dẫn đến việc giá cả hàng hóa chuyển hóa thành giá cả sản xuất [81, 82].'
+    "pairId": "pair-116",
+    "concept": "Hành vi lợi dụng chức vụ sử dụng tài sản trái phép",
+    "definition": "Dùng xe công, nhà công vào việc riêng của gia đình.",
+    "note": "Vi phạm phổ biến cần sự giám sát của dân [107, 177]."
   },
   {
-    pairId: 'pair-117',
-    concept: "Tỷ suất lợi tức (Z')",
-    definition: 'Tỷ lệ phần trăm giữa lợi tức (Z) và tư bản cho vay (TBCV)',
-    note: 'Bị chi phối bởi tỷ suất lợi nhuận bình quân [85, 86].'
+    "pairId": "pair-117",
+    "concept": "Trách nhiệm bảo vệ công lý",
+    "definition": "Mỗi công dân là một chiến sĩ trên mặt trận chống cái ác.",
+    "note": "Lẽ sống của người cán bộ và công dân chân chính [148, 178]."
   },
   {
-    pairId: 'pair-118',
-    concept: 'Địa tô chênh lệch II',
-    definition: 'Phần lợi nhuận siêu ngạch thu được nhờ đầu tư thêm tư bản để cải tạo, làm tăng độ màu mỡ đất đai',
-    note: 'Không phụ thuộc vào vị trí và chất lượng tự nhiên của đất [87, 88].'
+    "pairId": "pair-118",
+    "concept": "Sự trong sạch của bộ máy nhà nước",
+    "definition": "Là yêu cầu tất yếu để phục vụ nhân dân hiệu quả.",
+    "note": "Mục tiêu của xây dựng Nhà nước pháp quyền [11, 52]."
   },
   {
-    pairId: 'pair-119',
-    concept: 'Phản ánh quan hệ sở hữu',
-    definition: 'Quan hệ sở hữu là cơ sở để thực hiện các lợi ích kinh tế giữa các chủ thể',
-    note: 'Thực hiện lợi ích kinh tế phải thông qua quan hệ sở hữu [108, 109].'
+    "pairId": "pair-119",
+    "concept": "Trách nhiệm của công dân với tương lai dân tộc",
+    "definition": "Đấu tranh hôm nay để con cháu có xã hội tốt đẹp ngày mai.",
+    "note": "Ý thức về trách nhiệm lịch sử [179, 180]."
   },
   {
-    pairId: 'pair-120',
-    concept: 'Kinh tế tri thức',
-    definition:
-      'Nền kinh tế trong đó nguồn lực quan trọng hàng đầu là tri thức, quyết định sự tăng trưởng và phát triển kinh tế',
-    note: 'Tri thức trở thành tài nguyên quan trọng nhất [146, 147].'
-  },
-  {
-    pairId: 'pair-121',
-    concept: 'Đầu tư trực tiếp nước ngoài (FDI)',
-    definition:
-      'Hình thức xuất khẩu tư bản bằng cách xây dựng các xí nghiệp mới hoặc mua xí nghiệp hiện có ở nước nhận đầu tư',
-    note: 'Thực hiện trực tiếp việc kinh doanh [100, 101].'
-  },
-  {
-    pairId: 'pair-122',
-    concept: 'Đầu tư gián tiếp',
-    definition: 'Hình thức xuất khẩu tư bản thông qua việc cho vay nợ, mua bán cổ phiếu, trái phiếu',
-    note: 'Không trực tiếp tham gia quản lý hoạt động đầu tư [148, 149].'
-  },
-  {
-    pairId: 'pair-123',
-    concept: 'Lợi ích người lao động',
-    definition:
-      'Thu nhập dưới hình thức tiền lương (hay tiền công) và sự quản lý, điều hành của người sử dụng lao động',
-    note: 'Là người bán hàng hóa sức lao động [150, 151].'
-  },
-  {
-    pairId: 'pair-124',
-    concept: 'Lợi ích người sử dụng lao động',
-    definition: 'Lợi ích thu được qua quá trình kinh doanh, thông qua lợi nhuận',
-    note: 'Là người mua hàng hóa sức lao động [150, 151].'
-  },
-  {
-    pairId: 'pair-125',
-    concept: 'Phương pháp tư duy duy vật biện chứng',
-    definition:
-      'Phương pháp nghiên cứu xem xét sự vật, hiện tượng trong quá trình vận động, phát triển không ngừng và trong mối liên hệ phổ biến',
-    note: 'Là phương pháp nghiên cứu đặc trưng của Kinh tế Chính trị Mác - Lênin [152, 153].'
+    "pairId": "pair-120",
+    "concept": "Quyết tâm 'Làm đến cùng'",
+    "definition": "Không bỏ dở giữa chừng, không bị áp lực làm thay đổi mục tiêu.",
+    "note": "Khẳng định bản lĩnh của Đảng và sự đồng lòng của dân [139, 181]."
   }
 ]
+
 export interface GameCard {
   id: string
   pairId: string

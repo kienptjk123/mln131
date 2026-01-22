@@ -165,6 +165,10 @@
     transform: rotateY(180deg);
   }
 
+  .scale-102 {
+    transform: scale(1.02);
+  }
+
   @keyframes fadeInUp {
     from {
       opacity: 0;

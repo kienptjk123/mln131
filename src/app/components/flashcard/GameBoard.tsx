@@ -172,11 +172,11 @@ export function GameBoard() {
           <div className='relative text-center mb-8'>
             <div className='mb-4'>
               <div className='inline-flex items-center gap-3 bg-gray-900/80 backdrop-blur-sm rounded-2xl px-6 py-3 shadow-lg border border-gray-700/50 mb-4'>
-                <Zap className='w-6 h-6 text-yellow-500 animate-pulse' />
+                <Zap className='w-6 h-6 text-yellow-500' />
                 <h1 className='text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent'>
                   Trò chơi Lật - Ghép thẻ
                 </h1>
-                <Zap className='w-6 h-6 text-yellow-500 animate-pulse' />
+                <Zap className='w-6 h-6 text-yellow-500' />
               </div>
             </div>
 
@@ -185,7 +185,7 @@ export function GameBoard() {
             </p>
             {playerName && (
               <div className='inline-flex items-center gap-2 bg-gray-800/80 text-blue-300 px-4 py-2 rounded-full font-semibold text-sm border border-gray-600'>
-                <div className='w-2 h-2 bg-green-500 rounded-full animate-pulse'></div>
+                <div className='w-2 h-2 bg-green-500 rounded-full'></div>
                 Người chơi: {playerName}
               </div>
             )}
@@ -197,7 +197,7 @@ export function GameBoard() {
               onClick={initializeGame}
               variant='default'
               size='lg'
-              className='bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 text-white'
+              className='bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-lg transition-colors duration-200 text-white'
             >
               <RotateCcw className='w-4 h-4 mr-2' />
               Chơi lại
@@ -206,7 +206,7 @@ export function GameBoard() {
               onClick={() => setShowStudy(true)}
               variant='secondary'
               size='lg'
-              className='bg-gray-800/90 hover:bg-gray-700 border-2 border-gray-600 shadow-lg hover:shadow-xl transition-all duration-300 text-white'
+              className='bg-gray-800/90 hover:bg-gray-700 border-2 border-gray-600 shadow-lg transition-colors duration-200 text-white'
             >
               <BookOpen className='w-4 h-4 mr-2' />
               Xem khái niệm
@@ -215,7 +215,7 @@ export function GameBoard() {
               onClick={() => setShowLeaderboard(true)}
               variant='secondary'
               size='lg'
-              className='bg-gray-800/90 hover:bg-gray-700 border-2 border-gray-600 shadow-lg hover:shadow-xl transition-all duration-300 text-white'
+              className='bg-gray-800/90 hover:bg-gray-700 border-2 border-gray-600 shadow-lg transition-colors duration-200 text-white'
             >
               <Trophy className='w-4 h-4 mr-2' />
               Bảng xếp hạng
@@ -224,7 +224,7 @@ export function GameBoard() {
               onClick={() => setSoundEnabled(!soundEnabled)}
               variant='outline'
               size='lg'
-              className={`shadow-lg hover:shadow-xl transition-all duration-300 ${
+              className={`shadow-lg transition-colors duration-200 ${
                 soundEnabled
                   ? 'bg-green-900/30 border-green-600 text-green-400 hover:bg-green-900/50'
                   : 'bg-red-900/30 border-red-600 text-red-400 hover:bg-red-900/50'
@@ -241,24 +241,15 @@ export function GameBoard() {
           {/* Enhanced Game Grid with better spacing and animations */}
           <div className='relative'>
             <div className='grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-4 gap-6 max-w-5xl mx-auto p-6 bg-gray-900/50 rounded-3xl backdrop-blur-sm border border-gray-700/50 shadow-xl'>
-              {cards.map((card, index) => (
-                <div
-                  key={card.id}
-                  className='transform transition-all duration-300 ease-out'
-                  style={{
-                    animationDelay: `${index * 100}ms`,
-                    animation: cards.length > 0 ? 'fadeInUp 0.6s ease-out forwards' : 'none'
-                  }}
-                >
-                  <Card card={card} onClick={() => handleCardClick(card.id)} isLocked={isLocked} />
-                </div>
+              {cards.map((card) => (
+                <Card key={card.id} card={card} onClick={() => handleCardClick(card.id)} isLocked={isLocked} />
               ))}
             </div>
 
             {/* Game completion celebration overlay */}
             {cards.length > 0 && cards.every((card) => card.isMatched) && (
-              <div className='absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm rounded-3xl animate-fadeIn'>
-                <div className='bg-gray-800 rounded-2xl p-8 shadow-2xl border border-gray-600 text-center animate-bounce'>
+              <div className='absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm rounded-3xl'>
+                <div className='bg-gray-800 rounded-2xl p-8 shadow-2xl border border-gray-600 text-center'>
                   <Trophy className='w-16 h-16 text-yellow-500 mx-auto mb-4' />
                   <h3 className='text-2xl font-bold text-white mb-2'>Xuất sắc!</h3>
                   <p className='text-gray-300'>
