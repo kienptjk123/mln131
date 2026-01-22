@@ -22,8 +22,8 @@ const misconceptions = [
     myth: '"Chế độ XHCN không thể chống tham nhũng"',
     reality: 'Việt Nam đang chứng minh quyết tâm và hiệu quả cao',
     evidence: [
-      'Chiến dịch "Đốt lò" xử lý 500+ cán bộ các cấp',
-      'Thu hồi 45.000 tỷ đồng tài sản tham nhũng',
+      'Chiến dịch "Đốt lò" xử lý 170+ quan chức cấp cao, 168.000+ đảng viên bị kỷ luật',
+      'Thu hồi 61.000 tỷ đồng tài sản tham nhũng',
       'Không có vùng cấm, xử lý cả cán bộ cấp cao',
       'CPI của Việt Nam cải thiện liên tục qua các năm'
     ],
@@ -131,7 +131,7 @@ export default function PerspectivesPage() {
           <div className='absolute top-1/4 left-1/6 w-96 h-96 bg-red-900/20 rounded-full blur-3xl' />
           <div className='absolute bottom-1/4 right-1/6 w-96 h-96 bg-yellow-900/20 rounded-full blur-3xl' />
         </div>
-        
+
         <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -175,19 +175,24 @@ export default function PerspectivesPage() {
                     <Card className='border-yellow-600/30 bg-gradient-to-br from-black/80 to-red-950/50 backdrop-blur-sm'>
                       <CardHeader>
                         <div className='flex items-start gap-4'>
-                          <div className={`flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center`}>
+                          <div
+                            className={`flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center`}
+                          >
                             <Icon className='h-8 w-8 text-white' />
                           </div>
                           <div className='flex-1'>
-                            <CardTitle className='text-2xl text-red-400 mb-3'>❌ {item.myth}</CardTitle>
-                            <CardDescription className='text-xl text-green-400'>✅ {item.reality}</CardDescription>
+                            <CardTitle className='text-2xl text-red-400 mb-3'>{item.myth}</CardTitle>
+                            <CardDescription className='text-xl text-green-400'>{item.reality}</CardDescription>
                           </div>
                         </div>
                       </CardHeader>
                       <CardContent>
                         <div className='grid md:grid-cols-2 gap-4 mt-4'>
                           {item.evidence.map((point, idx) => (
-                            <div key={idx} className='flex items-start gap-3 p-4 rounded-lg border border-yellow-900/30 bg-gradient-to-r from-red-950/30 to-black/50'>
+                            <div
+                              key={idx}
+                              className='flex items-start gap-3 p-4 rounded-lg border border-yellow-900/30 bg-gradient-to-r from-red-950/30 to-black/50'
+                            >
                               <div className='mt-1 h-2 w-2 rounded-full bg-yellow-500 flex-shrink-0' />
                               <span className='text-gray-300 text-sm'>{point}</span>
                             </div>
@@ -224,7 +229,9 @@ export default function PerspectivesPage() {
                   >
                     <Card className='h-full border-red-600/30 bg-gradient-to-br from-red-950/60 to-black/80 backdrop-blur-sm'>
                       <CardHeader>
-                        <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${role.color} mb-4`}>
+                        <div
+                          className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${role.color} mb-4`}
+                        >
                           <Icon className='h-8 w-8 text-white' />
                         </div>
                         <CardTitle className='text-2xl text-yellow-100'>{role.title}</CardTitle>
@@ -255,9 +262,7 @@ export default function PerspectivesPage() {
             transition={{ duration: 0.6, delay: 1.0 }}
             className='mb-16'
           >
-            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>
-              Các biện pháp tăng cường minh bạch
-            </h2>
+            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>Các biện pháp tăng cường minh bạch</h2>
             <div className='grid md:grid-cols-3 gap-6'>
               {transparencyMeasures.map((measure, index) => (
                 <motion.div
@@ -295,7 +300,9 @@ export default function PerspectivesPage() {
             <Card className='border-yellow-600/30 bg-gradient-to-br from-black/80 to-red-950/50 backdrop-blur-sm'>
               <CardHeader>
                 <CardTitle className='text-3xl text-yellow-100 text-center'>{partnershipModel.title}</CardTitle>
-                <CardDescription className='text-gray-300 text-center text-lg'>{partnershipModel.description}</CardDescription>
+                <CardDescription className='text-gray-300 text-center text-lg'>
+                  {partnershipModel.description}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className='grid md:grid-cols-3 gap-6 mt-6'>

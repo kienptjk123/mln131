@@ -6,17 +6,17 @@ import NumberTicker from '@/components/ui/ticker'
 const stats = [
   {
     icon: Users,
-    value: '500+',
-    label: 'Cán bộ bị xử lý kỷ luật',
-    description: 'Trong chiến dịch "Đốt lò" phòng chống tham nhũng',
-    numericValue: 500
+    value: '168.000+',
+    label: 'Đảng viên bị kỷ luật',
+    description: 'Hơn 2.700 tổ chức đảng và gần 168.000 đảng viên',
+    numericValue: 168000
   },
   {
     icon: FileText,
-    value: '200+',
+    value: '19.546',
     label: 'Vụ án tham nhũng',
-    description: 'Đã được điều tra và xét xử nghiêm minh',
-    numericValue: 200
+    description: 'Đã truy tố với 33.868 bị cáo',
+    numericValue: 19546
   },
   {
     icon: TrendingUp,
@@ -52,7 +52,10 @@ export function Statistics() {
   }, [isSectionInView])
 
   return (
-    <section ref={sectionRef} className='border-y bg-gradient-to-b from-black via-gray-900 to-black border-red-900/30 py-16'>
+    <section
+      ref={sectionRef}
+      className='border-y bg-gradient-to-b from-black via-gray-900 to-black border-red-900/30 py-16'
+    >
       <div className='container mx-auto px-4'>
         <motion.div
           ref={statsRef}

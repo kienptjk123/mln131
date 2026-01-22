@@ -3,56 +3,55 @@ import { motion } from 'framer-motion'
 import { BarChart3, TrendingUp, AlertCircle, DollarSign, Users, Calendar } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Footer } from '@/components/landing/footer'
-import { EconomicTransformation } from '@/components/landing/economic-transformation'
 
 const majorCases = [
   {
-    year: '2016',
-    case: 'Vụ án Trịnh Xuân Thanh',
-    description: 'Nguyên Phó Chủ tịch UBND tỉnh Hậu Giang, nguyên Chủ tịch HĐQT, Tổng giám đốc PVC',
-    recovered: '543 tỷ đồng'
+    year: '2016-2018',
+    case: 'Vụ Phạm Công Danh - Ngân hàng Xây dựng',
+    description: 'Cựu Chủ tịch HĐQT, TGĐ VNCB. Dùng tiền ngân hàng bảo lãnh vay trái phép',
+    recovered: '6.100 tỷ đồng'
   },
   {
-    year: '2017',
-    case: 'Vụ án Đinh La Thăng',
-    description: 'Nguyên Bộ trưởng Bộ GTVT, nguyên Bí thư Thành ủy TP.HCM',
-    recovered: '800 tỷ đồng'
+    year: '2017-2018',
+    case: 'Vụ Trịnh Xuân Thanh & PVC - Nhiệt điện Thái Bình 2',
+    description: 'Cựu Phó Chủ tịch UBND Hậu Giang, Chủ tịch HĐQT PVC. Cố ý làm trái, tham ô tài sản',
+    recovered: '1.235 tỷ đồng'
   },
   {
     year: '2018',
-    case: 'Vụ án Mobifone - AVG',
-    description: 'Thương vụ mua 95% cổ phần AVG gây thất thoát hàng nghìn tỷ đồng',
-    recovered: '7.000 tỷ đồng'
+    case: 'Vụ Đinh La Thăng - PVN & OceanBank',
+    description: 'Cựu Bộ trưởng GTVT, Bí thư TP.HCM. Chỉ định thầu trái phép, góp vốn trái quy định',
+    recovered: '920 tỷ đồng'
   },
   {
-    year: '2019',
-    case: 'Vụ án Vũ "nhôm"',
-    description: 'Phan Văn Anh Vũ, đại gia BĐS Đà Nẵng chiếm đoạt tài sản nhà nước',
-    recovered: '1.200 tỷ đồng'
+    year: '2018-2019',
+    case: 'Vụ Phan Văn Vĩnh - Đánh bạc nghìn tỷ',
+    description: 'Trung tướng, Tổng cục trưởng Cảnh sát. Bảo kê đường dây đánh bạc online quy mô lớn',
+    recovered: '4.700 tỷ đồng'
   },
   {
-    year: '2020',
-    case: 'Vụ án Gang thép Thái Nguyên',
-    description: 'Nguyên Tổng Giám đốc Tập đoàn Gang thép Thái Nguyên',
-    recovered: '450 tỷ đồng'
+    year: '2019-2020',
+    case: 'Vụ MobiFone mua AVG',
+    description: 'Nguyễn Bắc Son, Trương Minh Tuấn - Cựu Bộ trưởng TT&TT. Vi phạm quản lý đầu tư công, nhận hối lộ',
+    recovered: '6.600 tỷ đồng'
   },
   {
-    year: '2021',
-    case: 'Vụ án Nhật Cường Mobile',
-    description: 'Buôn lậu, rửa tiền, trốn thuế quy mô lớn',
-    recovered: '2.000 tỷ đồng'
+    year: '2019-2020',
+    case: 'Vụ Vũ "nhôm" & đất công Đà Nẵng',
+    description: 'Phan Văn Anh Vũ. Thâu tóm trái phép 22 nhà đất công và 7 dự án tại Đà Nẵng',
+    recovered: '22.000 tỷ đồng'
+  },
+  {
+    year: '2021-2022',
+    case: 'Vụ Việt Á - Kit test COVID-19',
+    description: 'Phan Quốc Việt, Nguyễn Thanh Long - Cựu Bộ trưởng Y tế. Nâng khống giá kit test, chi hoa hồng',
+    recovered: '4.000 tỷ đồng'
   },
   {
     year: '2022',
-    case: 'Vụ án AIC, Phạm Nhật Vũ',
-    description: 'Nguyên Chủ tịch HĐQT Công ty AIC',
-    recovered: '3.600 tỷ đồng'
-  },
-  {
-    year: '2023',
-    case: 'Vụ án Vạn Thịnh Phát',
-    description: 'Trương Mỹ Lan, Chủ tịch HĐQT Tập đoàn Vạn Thịnh Phát',
-    recovered: '30.000 tỷ đồng'
+    case: 'Vụ Tân Hoàng Minh - Lừa đảo trái phiếu',
+    description: 'Đỗ Anh Dũng, Chủ tịch Tập đoàn Tân Hoàng Minh. Phát hành trái phiếu gian dối',
+    recovered: '10.300 tỷ đồng'
   }
 ]
 
@@ -97,23 +96,23 @@ const globalData = [
 const statistics = [
   {
     icon: Users,
-    value: '563',
-    label: 'Cán bộ bị xử lý kỷ luật',
-    description: 'Tính đến cuối năm 2023',
+    value: '168.000+',
+    label: 'Đảng viên bị kỷ luật',
+    description: 'Trong thập kỷ qua, 2.700+ tổ chức đảng',
     color: 'from-red-600 to-red-800'
   },
   {
     icon: DollarSign,
-    value: '45.000 tỷ',
+    value: '61.000 tỷ VND',
     label: 'Tài sản thu hồi',
     description: 'Qua các vụ án tham nhũng',
     color: 'from-yellow-600 to-yellow-800'
   },
   {
     icon: AlertCircle,
-    value: '248',
-    label: 'Vụ án được xét xử',
-    description: 'Chiến dịch "Đốt lò" 2016-2023',
+    value: '19.546',
+    label: 'Vụ án được truy tố',
+    description: 'Với 33.868 bị cáo',
     color: 'from-red-700 to-orange-700'
   },
   {
@@ -134,7 +133,7 @@ export default function RealityPage() {
           <div className='absolute top-1/4 left-1/6 w-96 h-96 bg-red-900/20 rounded-full blur-3xl' />
           <div className='absolute bottom-1/4 right-1/6 w-96 h-96 bg-yellow-900/20 rounded-full blur-3xl' />
         </div>
-        
+
         <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -172,7 +171,9 @@ export default function RealityPage() {
                   whileHover={{ scale: 1.05, y: -5 }}
                   className='p-6 rounded-xl border border-yellow-600/30 bg-gradient-to-br from-black/80 to-red-950/50 backdrop-blur-sm'
                 >
-                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br ${stat.color} mb-4`}>
+                  <div
+                    className={`inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br ${stat.color} mb-4`}
+                  >
                     <Icon className='h-6 w-6 text-white' />
                   </div>
                   <div className='text-3xl font-bold text-yellow-100 mb-2'>{stat.value}</div>
@@ -190,40 +191,99 @@ export default function RealityPage() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className='mb-16'
           >
-            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center flex items-center justify-center gap-3'>
+            <h2 className='text-3xl font-bold text-yellow-100 mb-12 text-center flex items-center justify-center gap-3'>
               <Calendar className='h-8 w-8 text-red-500' />
               Timeline: Các vụ án lớn trong chiến dịch "Đốt lò"
             </h2>
-            <div className='relative'>
-              <div className='absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-red-600 via-yellow-600 to-red-600' />
-              {majorCases.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-                  className={`relative mb-8 ${index % 2 === 0 ? 'pr-8 md:pr-1/2' : 'pl-8 md:pl-1/2 md:text-right'}`}
-                >
-                  <div className='absolute top-0 left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-yellow-500 border-4 border-black' />
-                  <Card className='border-yellow-600/30 bg-gradient-to-br from-red-950/60 to-black/80 backdrop-blur-sm'>
-                    <CardHeader>
-                      <div className='flex items-center gap-3 mb-2'>
-                        <span className='px-3 py-1 rounded-full bg-gradient-to-r from-red-600 to-yellow-600 text-white text-sm font-bold'>
-                          {item.year}
-                        </span>
+            <div className='relative max-w-6xl mx-auto'>
+              {/* Main vertical line */}
+              <div className='absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-red-600/50 via-yellow-600/50 to-red-600/50' />
+
+              {/* Animated vertical line */}
+              <motion.div
+                className='absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-red-600 via-yellow-600 to-red-600'
+                initial={{ height: 0 }}
+                whileInView={{ height: '100%' }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 2, ease: 'easeInOut' }}
+              />
+
+              <div className='space-y-12'>
+                {majorCases.map((item, index) => {
+                  const isLeft = index % 2 === 0
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: isLeft ? -100 : 100 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 0.8, delay: index * 0.1, ease: 'easeOut' }}
+                      className={`relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${
+                        isLeft ? 'md:text-right' : ''
+                      }`}
+                    >
+                      {/* Center dot with pulse animation */}
+                      <motion.div
+                        className='absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10'
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+                      >
+                        <div className='relative'>
+                          <div className='w-6 h-6 rounded-full bg-gradient-to-br from-yellow-400 to-red-500 border-4 border-black shadow-lg' />
+                          <motion.div
+                            className='absolute inset-0 rounded-full bg-yellow-500/50'
+                            animate={{
+                              scale: [1, 1.5, 1],
+                              opacity: [0.5, 0, 0.5]
+                            }}
+                            transition={{
+                              duration: 2,
+                              repeat: Infinity,
+                              ease: 'easeInOut'
+                            }}
+                          />
+                        </div>
+                      </motion.div>
+
+                      {/* Content - left side for even index, right side for odd */}
+                      <div className={`${isLeft ? 'md:col-start-1' : 'md:col-start-2'} ${!isLeft ? 'md:order-2' : ''}`}>
+                        <motion.div whileHover={{ scale: 1.02, y: -5 }} transition={{ duration: 0.3 }}>
+                          <Card className='border-yellow-600/30 bg-gradient-to-br from-red-950/80 to-black/90 backdrop-blur-sm shadow-xl hover:shadow-2xl hover:shadow-yellow-900/20 transition-all duration-300'>
+                            <CardHeader>
+                              <div
+                                className={`flex items-center gap-3 mb-3 ${isLeft ? 'md:justify-end' : 'md:justify-start'}`}
+                              >
+                                <motion.span
+                                  className='px-4 py-1.5 rounded-full bg-gradient-to-r from-red-600 to-yellow-600 text-white text-sm font-bold shadow-lg'
+                                  whileHover={{ scale: 1.1 }}
+                                >
+                                  {item.year}
+                                </motion.span>
+                              </div>
+                              <CardTitle className='text-yellow-100 text-xl mb-2'>{item.case}</CardTitle>
+                              <CardDescription className='text-gray-300 text-sm leading-relaxed'>
+                                {item.description}
+                              </CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                              <div
+                                className={`flex items-center gap-2 text-sm ${isLeft ? 'md:justify-end' : 'md:justify-start'}`}
+                              >
+                                <span className='text-green-400 font-semibold'>Thiệt hại: {item.recovered}</span>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </motion.div>
                       </div>
-                      <CardTitle className='text-yellow-100'>{item.case}</CardTitle>
-                      <CardDescription className='text-gray-300'>{item.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className='flex items-center gap-2 text-sm'>
-                        <DollarSign className='h-4 w-4 text-green-500' />
-                        <span className='text-green-400 font-semibold'>Thu hồi: {item.recovered}</span>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
+
+                      {/* Empty space on the other side */}
+                      <div className={`hidden md:block ${isLeft ? 'md:col-start-2' : 'md:col-start-1'}`} />
+                    </motion.div>
+                  )
+                })}
+              </div>
             </div>
           </motion.div>
 
@@ -234,9 +294,7 @@ export default function RealityPage() {
             transition={{ duration: 0.6, delay: 1.0 }}
             className='mb-16'
           >
-            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>
-              Tham nhũng là vấn đề toàn cầu
-            </h2>
+            <h2 className='text-3xl font-bold text-yellow-100 mb-8 text-center'>Tham nhũng là vấn đề toàn cầu</h2>
             <Card className='border-red-600/30 bg-gradient-to-br from-black/80 to-yellow-950/50 backdrop-blur-sm'>
               <CardHeader>
                 <CardTitle className='text-yellow-100'>Chỉ số Cảm nhận Tham nhũng (CPI) 2023</CardTitle>
@@ -264,7 +322,7 @@ export default function RealityPage() {
                           <div className={`text-xs ${country.color}`}>{country.trend}</div>
                         </div>
                         <div className='w-24 h-2 bg-gray-800 rounded-full overflow-hidden'>
-                          <div 
+                          <div
                             className='h-full bg-gradient-to-r from-red-600 to-yellow-600'
                             style={{ width: `${country.cpiScore}%` }}
                           />
@@ -278,9 +336,6 @@ export default function RealityPage() {
           </motion.div>
         </div>
       </section>
-
-      {/* Charts Section */}
-      <EconomicTransformation />
 
       <Footer />
     </div>

@@ -1,7 +1,7 @@
-import { Link, useLocation } from 'react-router-dom'
-import { BookOpen, Building2, BarChart3, Eye, Home, WalletCards } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { BarChart3, BookOpen, BookOpenCheck, Building2, Eye, Home } from 'lucide-react'
+import { Link, useLocation } from 'react-router-dom'
 
 export function Navbar() {
   const location = useLocation()
@@ -12,7 +12,7 @@ export function Navbar() {
     { path: '/thuc-tien', label: 'Thực tiễn & Số liệu', icon: BarChart3 },
     { path: '/xay-dung-dang', label: 'Xây dựng Đảng', icon: Building2 },
     { path: '/goc-nhin', label: 'Góc nhìn Đa chiều', icon: Eye },
-    { path: '/flashcard', label: 'Flashcard', icon: WalletCards }
+    { path: '/thuyet-trinh', label: 'Thuyết Trình', icon: BookOpenCheck }
   ]
 
   return (
@@ -41,8 +41,8 @@ export function Navbar() {
                     size='sm'
                     className={cn(
                       'gap-2',
-                      isActive 
-                        ? 'bg-gradient-to-r from-red-700 to-yellow-700 text-white hover:from-red-600 hover:to-yellow-600' 
+                      isActive
+                        ? 'bg-gradient-to-r from-red-700 to-yellow-700 text-white hover:from-red-600 hover:to-yellow-600'
                         : 'text-gray-300 hover:text-yellow-100 hover:bg-red-950/50'
                     )}
                   >
