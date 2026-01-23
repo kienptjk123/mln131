@@ -64,7 +64,7 @@ export function WelcomeModal({ open, onStart, onClose }: WelcomeModalProps) {
 
           <DialogDescription className='text-center space-y-3 pt-3'>
             <div className='bg-gradient-to-r from-blue-900/50 to-purple-900/50 rounded-xl p-4 border border-blue-700/50'>
-              <p className='font-bold text-lg text-gray-100 mb-1'>Chương 2: Kinh tế Chính trị</p>
+              <p className='font-bold text-lg text-gray-100 mb-1'>Chương 4: Dân chủ xã hội chủ nghĩa và nhà nước xã hội chủ nghĩa</p>
               <p className='text-sm text-gray-300'>
                 Các cặp khái niệm và quy luật cơ bản của sản xuất hàng hóa và tiền tệ
               </p>

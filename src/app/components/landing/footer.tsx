@@ -8,9 +8,9 @@ export function Footer() {
           <div>
             <div className='mb-4 flex items-center gap-2'>
               <Globe2 className='h-6 w-6 text-primary' />
-              <span className='text-lg font-bold text-foreground'>Hội Nhập Kinh Tế</span>
+              <span className='text-lg font-bold text-foreground'>Chủ nghĩa xã hội khoa học</span>
             </div>
-            <p className='text-sm text-muted-foreground'>Nền tảng giáo dục về hội nhập kinh tế quốc tế của Việt Nam.</p>
+            <p className='text-sm text-muted-foreground'>Nền tảng giáo dục về Chủ nghĩa xã hội khoa học.</p>
           </div>
 
           <div>
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className='mt-8 border-t pt-8 text-center text-sm text-muted-foreground'>
-          <p>© 2025 Dự án môn học Kinh tế chính trị Mác-Lênin. FPT University HCM</p>
+          <p>© 2025 Dự án môn học Chủ nghĩa xã hội khoa học. FPT University HCM</p>
         </div>
       </div>
     </footer>

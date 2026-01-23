@@ -291,7 +291,7 @@ Chúng tôi xin chân thành cảm ơn:
 <div align="center">
   <strong>
     🇻🇳 Được phát triển với ❤️ tại Việt Nam<br/>
-    📚 Dự án môn học Kinh tế chính trị Mác-Lênin<br/>
+    📚 Dự án môn học Chủ nghĩa xã hôị khoa học<br/>
     🏫 FPT University Ho Chi Minh City
   </strong>
   

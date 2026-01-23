@@ -22,12 +22,12 @@ export function Navbar() {
         <div className='flex h-16 items-center justify-between'>
           {/* Logo/Home */}
           <Link to='/' className='flex items-center gap-3 font-semibold group'>
-            <div className='w-10 h-10 rounded-lg bg-gradient-to-br from-red-600 to-yellow-600 flex items-center justify-center transform group-hover:scale-110 transition-transform'>
-              <span className='text-white text-xl font-bold'>Đ</span>
+            <div className='p-3 w-fit h-10 rounded-lg bg-gradient-to-br from-red-600 to-yellow-600 flex items-center justify-center transform group-hover:scale-110 transition-transform'>
+              <span className='text-white text-sm font-bold'>PCTN</span>
             </div>
-            <span className='text-lg bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent'>
+            {/* <span className='text-lg bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent'>
               Phòng Chống Tham Nhũng
-            </span>
+            </span> */}
           </Link>
 
           {/* Navigation Links */}

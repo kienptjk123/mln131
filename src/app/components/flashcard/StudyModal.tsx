@@ -96,7 +96,7 @@ export function StudyModal({ open, onClose }: StudyModalProps) {
                   Bộ sưu tập khái niệm
                 </DialogTitle>
                 <DialogDescription className="mt-1 text-gray-300 font-medium">
-                  {filteredPairs.length} khái niệm kinh tế chính trị
+                  {filteredPairs.length} khái niệm chủ nghĩa xã hội khoa học
                 </DialogDescription>
               </div>
             </div>
