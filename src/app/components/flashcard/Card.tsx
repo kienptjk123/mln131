@@ -59,8 +59,8 @@ export const Card = memo(function Card({ card, onClick, isLocked }: CardProps) {
           </div>
           
           <div className="text-white font-bold text-sm text-center leading-relaxed drop-shadow-md">
-            <span className="block text-xs opacity-90 mb-1">CHƯƠNG 2</span>
-            <span className="block text-base">Kinh tế Chính trị</span>
+            <span className="block text-xs opacity-90 mb-1">CHƯƠNG 4</span>
+            <span className="block text-base">Dân chủ xã hội chủ nghĩa và nhà nước xã hội chủ nghĩa</span>
           </div>
           
           {/* Enhanced glow effects */}
